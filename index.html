@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI每日资讯简报</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; background:#f5f5f5; color:#333; line-height:1.8; }
+  .container { max-width:677px; margin:0 auto; padding:20px; }
+  .header { background:linear-gradient(135deg, #0f0c29, #302b63, #24243e); color:#fff; border-radius:12px; padding:30px 20px; text-align:center; margin-bottom:20px; }
+  .header h1 { font-size:22px; margin-bottom:8px; }
+  .header p { font-size:13px; color:rgba(255,255,255,0.7); }
+  .brief-list { display:flex; flex-direction:column; gap:12px; }
+  .brief-item { background:#fff; border-radius:8px; padding:16px; text-decoration:none; color:#333; display:block; transition:transform 0.2s; }
+  .brief-item:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+  .brief-item .date { font-size:13px; color:#999; margin-bottom:4px; }
+  .brief-item .title { font-size:16px; font-weight:600; color:#1a1a1a; margin-bottom:6px; }
+  .brief-item .summary { font-size:13px; color:#666; line-height:1.6; }
+  .brief-item .tag { display:inline-block; background:#eef2ff; color:#6366f1; font-size:11px; padding:2px 8px; border-radius:3px; margin-top:8px; }
+  .footer { text-align:center; padding:30px 16px; font-size:12px; color:#b2b2b2; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI 每日资讯简报</h1>
+    <p>汽车行业研发信息化 · AI 行业动态</p>
+  </div>
+  <div class="brief-list" id="list">
+    <!-- 简报列表由脚本自动生成 -->
+  </div>
+  <div class="footer">
+    <p>每天早上 7:00 自动更新</p>
+  </div>
+</div>
+<script>
+  // 自动生成简报列表（根据当前目录下的 HTML 文件）
+  fetch('./')
+    .then(r => r.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const links = [...doc.querySelectorAll('a')];
+      const items = links.filter(a => a.href.includes('AI每日资讯简报') && a.href.endsWith('.html'))
+        .map(a => {
+          const date = a.href.match(/(\d{4}-\d{2}-\d{2})/)?.[1] || '';
+          return { href: a.href, date, title: a.textContent || date };
+        })
+        .sort((a, b) => b.date.localeCompare(a.date));
+      
+      const list = document.getElementById('list');
+      if (items.length === 0) {
+        list.innerHTML = '<div style="text-align:center;color:#999;padding:40px;">暂无简报，等待定时任务生成...</div>';
+      } else {
+        list.innerHTML = items.map(item => `
+          <a href="${item.href}" class="brief-item">
+            <div class="date">${item.date}</div>
+            <div class="title">AI 每日资讯简报</div>
+            <div class="summary">${item.date} 的 AI 行业资讯与汽车研发信息化动态</div>
+            <span class="tag">点击查看</span>
+          </a>
+        `).join('');
+      }
+    })
+    .catch(() => {
+      document.getElementById('list').innerHTML = '<div style="text-align:center;color:#999;padding:40px;">加载中...</div>';
+    });
+</script>
+</body>
+</html>

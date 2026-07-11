@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026-07-11｜AI每日资讯简报</title>
+<meta property="og:title" content="2026-07-11｜AI每日资讯简报">
+<meta property="og:description" content="OpenAI GPT-5.6万亿参数发布｜xAI Grok 4.5编程登顶｜MiniMax 160亿港元融资｜DeepSeek智谱双线造芯｜车企PLM/MES数字化加速">
+<meta property="og:image" content="cover.jpg">
+<meta property="og:type" content="article">
+<meta property="og:width" content="677">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wx-article {
+    max-width: 677px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+  }
+  .cover {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 30%, #2d1b69 60%, #1a1a3e 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('cover.jpg') center/cover no-repeat;
+    opacity: 0.25;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10,10,46,0.3) 0%, rgba(10,10,46,0.7) 60%, rgba(10,10,46,0.92) 100%);
+  }
+  .cover-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .cover-date {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 8px 28px;
+    color: rgba(255,255,255,0.95);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+  .cover-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  .cover-sub {
+    color: rgba(255,255,255,0.65);
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  .summary-block {
+    margin: 20px 16px 0;
+    padding: 16px 18px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+    border-left: 3px solid #4a90d9;
+  }
+  .summary-block strong {
+    color: #333;
+    font-weight: 600;
+  }
+  .section {
+    padding: 0 16px;
+    margin-top: 28px;
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .emoji {
+    font-size: 22px;
+  }
+  .news-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+  }
+  .news-title {
+    font-size: 15.5px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin-bottom: 5px;
+  }
+  .news-desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.75;
+  }
+  .news-source {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+  .section-auto {
+    margin: 28px 16px;
+    padding: 20px;
+    background: #fffbe6;
+    border-radius: 12px;
+    border: 1px solid #fff3c4;
+  }
+  .section-auto .section-title {
+    border-bottom-color: #ffe58f;
+  }
+  .section-trend {
+    margin: 28px 16px;
+    padding: 20px;
+    background: #f0fff4;
+    border-radius: 12px;
+    border: 1px solid #b7eb8f;
+  }
+  .section-trend .section-title {
+    border-bottom-color: #95de64;
+  }
+  .footer {
+    text-align: center;
+    padding: 32px 16px 40px;
+    color: #bbb;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .footer .brand {
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+  .tag-hot { background: #fff1f0; color: #cf1322; }
+  .tag-new { background: #e6f7ff; color: #096dd9; }
+  .tag-money { background: #fff7e6; color: #d48806; }
+  .tag-car { background: #f0f5ff; color: #2f54eb; }
+  .tag-trend { background: #f6ffed; color: #389e0d; }
+</style>
+</head>
+<body>
+<div class="wx-article">
+  <div class="cover">
+    <div class="cover-content">
+      <div class="cover-date">2026年7月11日 · 星期六</div>
+      <div class="cover-title">AI 每日资讯简报</div>
+      <div class="cover-sub">大模型 · 产品应用 · 国内动态 · 汽车研发信息化</div>
+    </div>
+  </div>
+  <div class="summary-block">
+    <strong>今日要点：</strong>OpenAI发布GPT-5.6万亿参数旗舰模型；xAI联合Cursor推出Grok 4.5编程模型；MiniMax完成160亿港元融资冲刺港股；DeepSeek与智谱双双布局自研AI芯片；苹果放弃自研大模型转向Gemini合作；车企PLM/MES数字化投入创纪录增长。
+  </div>
+  <div class="section">
+    <div class="section-title"><span class="emoji">🔥</span> AI 热点</div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-hot">热点</span>OpenAI发布GPT-5.6系列：万亿参数+Codex深度融合</div>
+      <div class="news-desc">OpenAI上线GPT-5.6系列模型，参数冲至万亿级，ChatGPT与编程AI Agent Codex实现深度整合，推理与代码能力大幅提升。</div>
+      <div class="news-source">来源：IT之家 · 搜狐</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-hot">热点</span>xAI联合Cursor发布Grok 4.5，编程能力登顶全球</div>
+      <div class="news-desc">马斯克旗下xAI发布Grok 4.5编程模型，在数万亿token的Cursor用户数据上训练，每百万token输入仅$2，性价比碾压竞品。</div>
+      <div class="news-source">来源：头条 · 搜狐</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-money">融资</span>MiniMax完成160亿港元融资，冲刺港股</div>
+      <div class="news-desc">港股大模型公司MiniMax完成160亿港元融资（配股+零息可转债），创始人宣布"0薪酬"。同期月之暗面Kimi寻求20亿美元融资。</div>
+      <div class="news-source">来源：头条 · 投资界</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-hot">热点</span>DeepSeek与智谱同日被曝自研AI推理芯片</div>
+      <div class="news-desc">DeepSeek已秘密推进自研推理芯片超一年，聚焦推理场景开发专用ASIC；智谱AI正与国内芯片厂商接洽定制化方案。国产大模型企业开启"造芯"突围。</div>
+      <div class="news-source">来源：路透社 · 36氪 · 量子位</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">政策</span>豆包、千问拟人化智能体7月15日起下线</div>
+      <div class="news-desc">字节豆包和阿里千问同步公告：用户自建拟人化UGC智能体将正式下线，恰逢《人工智能拟人化互动服务管理暂行办法》施行日。</div>
+      <div class="news-source">来源：头条 · CSDN</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title"><span class="emoji">🧠</span> 大模型技术</div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">发布</span>Meta开放Muse Spark 1.1 API，主打专业场景</div>
+      <div class="news-desc">Meta向开发者开放Muse Spark 1.1模型API，主打多代理自动化工作流程优化，定价极低，多项专业榜单夺冠。</div>
+      <div class="news-source">来源：IT之家 · 新智元</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">开源</span>DeepSeek V4正式版定档7月15日上线</div>
+      <div class="news-desc">推理提速85%，首次在LLM API领域引入"峰谷分时定价"机制，高峰时段API费用翻倍。</div>
+      <div class="news-source">来源：头条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">发布</span>谷歌Gemini 3.5 Pro计划7月17日发布</div>
+      <div class="news-desc">支持200万token上下文窗口，前端与视觉代码生成能力出现跨越式跃升，多项测试压制Anthropic Fable 5。</div>
+      <div class="news-source">来源：头条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">开源</span>快手开源Auto Think大模型</div>
+      <div class="news-desc">支持问题自动调节思考深度，推动AI内容生成与交互创新。</div>
+      <div class="news-source">来源：CSDN</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title"><span class="emoji">📱</span> 产品应用</div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-hot">热点</span>苹果放弃自研大模型，Siri将基于Gemini构建</div>
+      <div class="news-desc">苹果与谷歌官宣多年期合作，下一代Apple Foundation Models将基于Gemini及Google Cloud构建，新版Siri预计今年晚些时候推出。</div>
+      <div class="news-source">来源：澎湃新闻 · 搜狐</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">发布</span>字节Seedance 2.5视频生成：原生4K+音画同步</div>
+      <div class="news-desc">单次原生直出30秒4K视频，支持音画同步和局部场景编辑，无需多段拼接。</div>
+      <div class="news-source">来源：科创板日报 · 头条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">突破</span>谷歌Gemini获IMO国际数学奥赛金牌</div>
+      <div class="news-desc">Gemini高级版在2025 IMO中解答6题中的5题获35分，成绩获官方认证，AI复杂逻辑推理重大突破。</div>
+      <div class="news-source">来源：CSDN</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-money">融资</span>可灵AI独立分拆，融资最高30亿美元</div>
+      <div class="news-desc">快手公告旗下AI视频生成平台可灵AI独立分拆，引入最高30亿美元外部投资，为2025年AI应用层最大融资之一。</div>
+      <div class="news-source">来源：头条</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title"><span class="emoji">🇨🇳</span> 国内动态</div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">政策</span>WAIC 2025开幕：百款新品首发，意向采购162亿</div>
+      <div class="news-desc">汇聚800余家企业、3000余项展品，发布《AI全球治理行动计划》，上海发放算力券、模型券、语料券各100万元。</div>
+      <div class="news-source">来源：第一财经 · CSDN</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-new">政策</span>北京发布AI赋能科研高质量发展行动计划</div>
+      <div class="news-desc">明确到2027年建成科学基础大模型、10个高质量科学数据库，推动AI+科研深度融合。</div>
+      <div class="news-source">来源：CSDN</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-trend">趋势</span>AI初创公司吸金创纪录：1927亿美元风投</div>
+      <div class="news-desc">有望成为首个超一半风投资金流入AI行业的年份，大部分资金流向成熟期公司。</div>
+      <div class="news-source">来源：头条</div>
+    </div>
+  </div>
+  <div class="section-auto">
+    <div class="section-title"><span class="emoji">🚗</span> 汽车研发信息化专题</div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">PLM</span>比亚迪弗迪电池启动Teamcenter PLM项目建设</div>
+      <div class="news-desc">搭建产品数据管理、零部件管控、研发协同及生产追溯平台，实现BOM流向整合，支撑工厂数字化转型。</div>
+      <div class="news-source">来源：优孚信息</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">PLM</span>国产PLM厂商市场份额首破45%</div>
+      <div class="news-desc">用友PLM凭借"超级BOM"功能帮助某新能源车企将车型配置开发周期从6个月压缩至3个月。</div>
+      <div class="news-source">来源：搜狐</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">MES</span>MES市场规模突破450亿，盘古信息服务比亚迪华为</div>
+      <div class="news-desc">年复合增长率23.6%，已服务700+工厂、13000+生产线，覆盖生产调度、质量追溯、设备物联五大模块。</div>
+      <div class="news-source">来源：头条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">实验室</span>汽车实验室LIMS市场突破50亿元</div>
+      <div class="news-desc">引入LIMS后报告差错率从2.3%降至0.05%以下，大众中国检测产能提升30%、人力成本下降20%。</div>
+      <div class="news-source">来源：搜狐</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">车企</span>一汽-大众×华为云打造首个"云上"分布式汽车工厂</div>
+      <div class="news-desc">采用长春专属云+佛山CloudPond"一朵云"架构，实现异地工厂与总部数据全面融合。</div>
+      <div class="news-source">来源：华为云</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">车企</span>车企数字化指数：特斯拉第一，蔚来小鹏跻身前三</div>
+      <div class="news-desc">Gartner发布车企数字化指数，预计2030年投入从1000亿涨至2380亿美元。蔚来小鹏因软件优先文化获高分。</div>
+      <div class="news-source">来源：Gartner报告</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">车企</span>蔚来小鹏吉利自研芯片流片成功，比亚迪理想跟进</div>
+      <div class="news-desc">车企自研芯片进入收获期，数字化制造可带来10%-20%成本降幅。</div>
+      <div class="news-source">来源：雪球 · 头条</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-car">车企</span>特斯拉首秀数博会，Cortex算力达6.7万块H100等效</div>
+      <div class="news-desc">新增1.6万块H200 GPU，智能辅助驾驶累计行驶里程超72亿公里。</div>
+      <div class="news-source">来源：贵阳广播电视台</div>
+    </div>
+  </div>
+  <div class="section-trend">
+    <div class="section-title"><span class="emoji">📈</span> 趋势观察</div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-trend">趋势</span>2025年成"AI应用落地元年"</div>
+      <div class="news-desc">李开复表示2025年是AI应用大规模落地的元年，B端落地进程或超预期，推理模型突破推动垂类应用全面爆发。</div>
+      <div class="news-source">来源：WAIC论坛 · 中信建投</div>
+    </div>
+    <div class="news-item">
+      <div class="news-title"><span class="tag tag-trend">趋势</span>汽车行业成全球数字化转型最大投资者</div>
+      <div class="news-desc">预计2030年数字化投入达2380亿美元，新能源车企研发信息化增速远超传统车企。</div>
+      <div class="news-source">来源：Gartner报告</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand">📰 AI 每日资讯简报</div>
+    <div>数据来源：36氪 · 机器之心 · 量子位 · InfoQ · 盖世汽车等</div>
+    <div>由AI自动生成 · 内容仅供参考</div>
+    <div style="margin-top:6px;">2026-07-11</div>
+  </div>
+</div>
+</body>
+</html>
