@@ -2,70 +2,143 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>AI每日资讯简报</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; background:#f5f5f5; color:#333; line-height:1.8; }
-  .container { max-width:677px; margin:0 auto; padding:20px; }
-  .header { background:linear-gradient(135deg, #0f0c29, #302b63, #24243e); color:#fff; border-radius:12px; padding:30px 20px; text-align:center; margin-bottom:20px; }
-  .header h1 { font-size:22px; margin-bottom:8px; }
-  .header p { font-size:13px; color:rgba(255,255,255,0.7); }
-  .brief-list { display:flex; flex-direction:column; gap:12px; }
-  .brief-item { background:#fff; border-radius:8px; padding:16px; text-decoration:none; color:#333; display:block; transition:transform 0.2s; }
-  .brief-item:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,0.08); }
-  .brief-item .date { font-size:13px; color:#999; margin-bottom:4px; }
-  .brief-item .title { font-size:16px; font-weight:600; color:#1a1a1a; margin-bottom:6px; }
-  .brief-item .summary { font-size:13px; color:#666; line-height:1.6; }
-  .brief-item .tag { display:inline-block; background:#eef2ff; color:#6366f1; font-size:11px; padding:2px 8px; border-radius:3px; margin-top:8px; }
-  .footer { text-align:center; padding:30px 16px; font-size:12px; color:#b2b2b2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5; color: #333; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 677px; margin: 0 auto; padding: 16px; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #fff; border-radius: 16px; padding: 36px 24px; text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-tag {
+    display: inline-block; background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.85);
+    font-size: 11px; padding: 3px 14px; border-radius: 20px;
+    margin-bottom: 14px; letter-spacing: 2px;
+  }
+  .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+  .header p { font-size: 13px; color: rgba(255,255,255,0.6); }
+
+  /* Latest */
+  .section-title {
+    font-size: 15px; font-weight: 700; color: #1a1a1a;
+    margin-bottom: 12px; padding-left: 10px;
+    border-left: 3px solid #6366f1;
+  }
+  .latest-card {
+    background: #fff; border-radius: 12px; padding: 20px;
+    margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .latest-card .date { font-size: 13px; color: #999; margin-bottom: 6px; }
+  .latest-card .title { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; }
+  .latest-card .desc { font-size: 13px; color: #666; margin-bottom: 16px; line-height: 1.8; }
+  .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 10px 20px; border-radius: 8px; font-size: 14px;
+    font-weight: 500; text-decoration: none; transition: all 0.2s;
+    border: none; cursor: pointer;
+  }
+  .btn-primary { background: #6366f1; color: #fff; }
+  .btn-primary:hover { background: #4f46e5; }
+  .btn-secondary { background: #f0f0f0; color: #333; }
+  .btn-secondary:hover { background: #e0e0e0; }
+
+  /* History */
+  .history-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .history-item {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #fff; border-radius: 10px; padding: 14px 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    text-decoration: none; color: #333;
+  }
+  .history-item:active { background: #f9f9f9; }
+  .history-item .left { display: flex; align-items: center; gap: 12px; }
+  .history-item .date-badge {
+    background: #eef2ff; color: #6366f1; font-size: 12px; font-weight: 600;
+    padding: 4px 10px; border-radius: 6px;
+  }
+  .history-item .label { font-size: 14px; font-weight: 500; }
+  .history-item .arrow { color: #ccc; font-size: 18px; }
+
+  .footer {
+    text-align: center; padding: 24px 16px; font-size: 12px; color: #b2b2b2;
+    border-top: 1px solid #eee;
+  }
+  .empty { text-align: center; color: #999; padding: 40px; font-size: 14px; }
+
+  @media (max-width: 400px) {
+    .btn-group { flex-direction: column; }
+    .btn { justify-content: center; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
+    <div class="header-tag">DAILY AI BRIEFING</div>
     <h1>AI 每日资讯简报</h1>
     <p>汽车行业研发信息化 · AI 行业动态</p>
   </div>
-  <div class="brief-list" id="list">
-    <!-- 简报列表由脚本自动生成 -->
-  </div>
+  <div id="app"></div>
   <div class="footer">
-    <p>每天早上 7:00 自动更新</p>
+    <p>每天早上 7:00 自动更新 · 手机访问收藏此页面</p>
   </div>
 </div>
 <script>
-  // 自动生成简报列表（根据当前目录下的 HTML 文件）
-  fetch('./')
-    .then(r => r.text())
-    .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const links = [...doc.querySelectorAll('a')];
-      const items = links.filter(a => a.href.includes('AI每日资讯简报') && a.href.endsWith('.html'))
-        .map(a => {
-          const date = a.href.match(/(\d{4}-\d{2}-\d{2})/)?.[1] || '';
-          return { href: a.href, date, title: a.textContent || date };
-        })
-        .sort((a, b) => b.date.localeCompare(a.date));
-      
-      const list = document.getElementById('list');
-      if (items.length === 0) {
-        list.innerHTML = '<div style="text-align:center;color:#999;padding:40px;">暂无简报，等待定时任务生成...</div>';
-      } else {
-        list.innerHTML = items.map(item => `
-          <a href="${item.href}" class="brief-item">
-            <div class="date">${item.date}</div>
-            <div class="title">AI 每日资讯简报</div>
-            <div class="summary">${item.date} 的 AI 行业资讯与汽车研发信息化动态</div>
-            <span class="tag">点击查看</span>
-          </a>
-        `).join('');
-      }
-    })
-    .catch(() => {
-      document.getElementById('list').innerHTML = '<div style="text-align:center;color:#999;padding:40px;">加载中...</div>';
-    });
+fetch('./reports.json')
+  .then(r => r.json())
+  .then(reports => {
+    const sorted = reports.sort((a, b) => b.date.localeCompare(a.date));
+    const app = document.getElementById('app');
+    if (sorted.length === 0) { app.innerHTML = '<div class="empty">暂无简报，等待生成...</div>'; return; }
+
+    const latest = sorted[0];
+    const weekday = ['日','一','二','三','四','五','六'][new Date(latest.date).getDay()];
+
+    let html = `
+      <div class="section-title">今日简报</div>
+      <div class="latest-card">
+        <div class="date">${latest.date} 星期${weekday}</div>
+        <div class="title">${latest.title}</div>
+        <div class="desc">覆盖 AI 行业热点、大模型技术、产品应用及汽车研发信息化专题（PLM/BOM/智能制造/全业务链路）</div>
+        <div class="btn-group">
+          <a href="./${encodeURIComponent(latest.html)}" class="btn btn-primary">📱 查看简报</a>
+          ${latest.pdf ? `<a href="./${encodeURIComponent(latest.pdf)}" class="btn btn-secondary">📄 下载 PDF</a>` : ''}
+          ${latest.image ? `<a href="./${encodeURIComponent(latest.image)}" class="btn btn-secondary">🖼️ 查看图片</a>` : ''}
+        </div>
+      </div>`;
+
+    if (sorted.length > 1) {
+      html += '<div class="section-title">历史简报</div><div class="history-list">';
+      sorted.slice(1).forEach(item => {
+        const wd = ['日','一','二','三','四','五','六'][new Date(item.date).getDay()];
+        html += `
+          <a href="./${encodeURIComponent(item.html)}" class="history-item">
+            <div class="left">
+              <span class="date-badge">${item.date}</span>
+              <span class="label">星期${wd}</span>
+            </div>
+            <span class="arrow">›</span>
+          </a>`;
+      });
+      html += '</div>';
+    }
+
+    app.innerHTML = html;
+  })
+  .catch(() => {
+    document.getElementById('app').innerHTML = '<div class="empty">加载中...</div>';
+  });
 </script>
 </body>
 </html>

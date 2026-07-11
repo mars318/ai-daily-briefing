@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026-07-12｜AI每日资讯简报</title>
+<meta property="og:title" content="2026-07-12｜AI每日资讯简报">
+<meta property="og:description" content="苹果起诉OpenAI｜美团开源LongCat-2.0｜腾讯混元Hy3发布｜曙光8000超算落成｜宇树机器人登Nature">
+<meta property="og:image" content="cover.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5; color: #333; line-height: 1.8; -webkit-font-smoothing: antialiased;
+  }
+  .wx-article { max-width: 677px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  .cover {
+    width: 100%; aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    position: relative; overflow: hidden;
+  }
+  .cover img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+  .cover-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .cover-tag {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9); font-size: 11px; padding: 3px 12px;
+    border-radius: 20px; margin-bottom: 16px; letter-spacing: 2px;
+  }
+  .cover h1 { color: #fff; font-size: 26px; font-weight: 700; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .cover .date { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 10px; }
+  .content { padding: 20px 16px 40px; }
+  .summary {
+    background: #f7f8fa; border-radius: 8px; padding: 16px;
+    margin-bottom: 20px; font-size: 14px; color: #666; line-height: 2;
+  }
+  .summary strong { color: #333; }
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0;
+  }
+  .section-header .icon { font-size: 18px; }
+  .section-header h2 { font-size: 17px; font-weight: 700; color: #1a1a1a; }
+  .news { padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+  .news:last-child { border-bottom: none; }
+  .news h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; line-height: 1.6; }
+  .news .meta { font-size: 12px; color: #999; margin-bottom: 4px; }
+  .news .desc { font-size: 14px; color: #555; line-height: 1.8; }
+  .tag-hot {
+    display: inline-block; background: #ff4d4f; color: #fff;
+    font-size: 10px; padding: 1px 6px; border-radius: 3px;
+    margin-right: 4px; vertical-align: middle; font-weight: 500;
+  }
+  .auto-section { background: #fffbf0; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  .auto-section .section-header { border-bottom-color: #ffe4b5; }
+  .sub-title {
+    font-size: 14px; font-weight: 600; color: #b8860b;
+    margin: 14px 0 8px; padding-left: 8px; border-left: 3px solid #f5a623;
+  }
+  .sub-title:first-of-type { margin-top: 0; }
+  .insight {
+    background: #fff8e6; border: 1px solid #ffe4b5; border-radius: 8px;
+    padding: 14px; margin-top: 14px; font-size: 13px; color: #5d4200; line-height: 1.9;
+  }
+  .insight strong { color: #b8860b; }
+  .trend-section { background: #f0fff4; border-radius: 8px; padding: 16px; }
+  .trend-section .section-header { border-bottom-color: #b7eb8f; }
+  .trend-item {
+    display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e8f5e9;
+  }
+  .trend-item:last-child { border-bottom: none; }
+  .trend-num {
+    width: 22px; height: 22px; border-radius: 50%; background: #52c41a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+  }
+  .trend-item h4 { font-size: 14px; font-weight: 600; color: #135200; margin-bottom: 2px; }
+  .trend-item p { font-size: 13px; color: #389e0d; line-height: 1.8; }
+  .footer {
+    text-align: center; padding: 24px 16px; font-size: 12px;
+    color: #b2b2b2; border-top: 1px solid #f0f0f0;
+  }
+  .footer .brand { color: #999; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wx-article">
+  <div class="cover">
+    <img src="cover.jpg" alt="AI Daily Briefing">
+    <div class="cover-overlay">
+      <div class="cover-tag">DAILY AI BRIEFING</div>
+      <h1>2026-07-12</h1>
+      <div class="date">AI每日资讯简报 · 星期六</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="summary">
+      <strong>今日看点：</strong>苹果起诉 OpenAI 窃取商业机密、美团开源万亿参数 LongCat-2.0、腾讯混元 Hy3 正式发布、全国产十万卡"曙光8000"落成、宇树 G1 机器人完成全球首例活体微创手术登 Nature、6 月中国汽车出口首破百万。
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🔥</span><h2>AI 行业热点</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">头条</span>苹果正式起诉 OpenAI 窃取商业机密，为自研 AI 硬件铺路</h3>
+        <div class="meta">苹果 / IT之家 · 7月11日</div>
+        <div class="desc">苹果指控 OpenAI 系统性窃取其芯片设计与 AI 服务器架构等核心机密，要求销毁涉密资料。苹果同时同意英特尔代工部分芯片换取关税豁免。</div>
+      </div>
+      <div class="news">
+        <h3>美团开源万亿参数大模型 LongCat-2.0，正式加入开源阵营</h3>
+        <div class="meta">美团 / 36氪 · 7月11日</div>
+        <div class="desc">采用 MoE 架构，支持百万级 Token 上下文窗口，在长上下文推理与多轮对话上显著突破，多项基准超越同量级开源模型。</div>
+      </div>
+      <div class="news">
+        <h3>腾讯混元 Hy3 正式版发布：295B MoE + 256K 上下文</h3>
+        <div class="meta">腾讯 · 7月11日</div>
+        <div class="desc">主打企业级 AI 智能体，免费 Agent 功能同步上线。295B 参数 MoE 架构，256K 超长上下文。</div>
+      </div>
+      <div class="news">
+        <h3>Meta 首次向开发者收费，自研 AI 芯片 Iris 计划 9 月量产</h3>
+        <div class="meta">Meta / IT之家 · 7月10-11日</div>
+        <div class="desc">Muse Spark 1.1 及图像模型 Muse Image 发布并首次收费。扎克伯格称 2026 年部署 7GW 算力基建，2027 年翻倍扩张。</div>
+      </div>
+      <div class="news">
+        <h3>全国产十万卡 AI 超集群"曙光 8000"正式落成</h3>
+        <div class="meta">中科院 · 7月11日</div>
+        <div class="desc">同步接入国家超算互联网，为国产大模型训练提供核心算力支撑，标志着国产算力基础设施进入新阶段。</div>
+      </div>
+      <div class="news">
+        <h3>SK 海力士纳斯达克上市，创半导体史上最大 IPO</h3>
+        <div class="meta">新浪财经 · 7月10-11日</div>
+        <div class="desc">ADR 开盘价 170 美元溢价 14%，市值突破 8.4 万亿韩元。HBM 全球市占 56.4%，AI 服务器需求为核心支撑。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🧠</span><h2>大模型与技术</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">突破</span>华为发布《韬定律 V2》：7nm 制程达 1.4nm 级算力密度</h3>
+        <div class="meta">华为 · 7月11日</div>
+        <div class="desc">提出以逻辑折叠 3D 堆叠替代晶体管缩小的新路径，绕过 EUV 光刻限制，在 7nm 制程上实现接近 1.4nm 级的算力密度。</div>
+      </div>
+      <div class="news">
+        <h3>英特尔 EMIB-T 封装方案问世，HBM4e 速率 12Gb/s 碾压 CoWoS</h3>
+        <div class="meta">英特尔 / IEEE 2026 · 7月11日</div>
+        <div class="desc">硅桥引入硅通孔实现垂直互连，带宽密度碾压台积电 CoWoS，支持 2027 年下一代 AI 加速器。</div>
+      </div>
+      <div class="news">
+        <h3>AMD PEPS 纹理压缩：8GB 显存够用，参数减少 25%</h3>
+        <div class="meta">AMD / IT之家 · 7月11日</div>
+        <div class="desc">改变位置编码使用方式，在同级画质下将神经纹理模型参数减少 25%，降低 8GB 显卡显存压力。</div>
+      </div>
+      <div class="news">
+        <h3>张平院士撰文：6G 构筑未来世界神经网络，空天地一体</h3>
+        <div class="meta">人民日报 · 7月11日</div>
+        <div class="desc">6G 不是 5G 简单升级，而是通信范式根本性跃迁，将融合感知、通信、计算与智能。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🚀</span><h2>产品与应用</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">突破</span>宇树 G1 完成全球首例活体微创手术，登 Nature</h3>
+        <div class="meta">宇树科技 / Nature · 7月11日</div>
+        <div class="desc">腹腔镜胆囊切除术从 56 分钟缩短至 32 分钟，人形机器人正式进入医疗手术场景。</div>
+      </div>
+      <div class="news">
+        <h3>京东首个 RoboBase 落地广州，打造机器人全生命周期基建</h3>
+        <div class="meta">京东 / IT之家 · 7月11日</div>
+        <div class="desc">覆盖研发测试、部署运维到回收再制造完整链路，京东从电商物流向机器人基础设施延伸。</div>
+      </div>
+      <div class="news">
+        <h3>6 月中国汽车出口 103.7 万辆首破百万，新能源出口超燃油车</h3>
+        <div class="meta">海关总署 · 7月11日</div>
+        <div class="desc">新能源汽车出口 52.3 万辆，首次超越传统燃油车。汽车出口持续拉动制造业出海。</div>
+      </div>
+    </div>
+    <div class="auto-section">
+      <div class="section-header"><span class="icon">🚗</span><h2>汽车研发信息化专题</h2></div>
+      <div class="sub-title">芯片与制造</div>
+      <div class="news">
+        <h3>广汽资本战略投资星河动力，车企跨界布局商业航天</h3>
+        <div class="meta">广汽 / IT之家 · 7月11日</div>
+        <div class="desc">投资商业火箭企业星河动力，探索"汽车+航天"协同新路径，将新能源产业链与航天制造融合。</div>
+      </div>
+      <div class="news">
+        <h3>七彩虹 X870E 搭配国产颗粒 DDR5 突破 8600MT/s</h3>
+        <div class="meta">七彩虹 / IT之家 · 7月11日</div>
+        <div class="desc">刷新国产内存超频纪录，证明国产 DRAM 颗粒在高频消费级市场的竞争力快速提升，利好汽车芯片国产替代。</div>
+      </div>
+      <div class="sub-title">PLM / 研发数字化</div>
+      <div class="news">
+        <h3><span class="tag-hot">重点</span>PLM 助力上海汽车零部件产业集群数字化转型</h3>
+        <div class="meta">行业分析 · 7月</div>
+        <div class="desc">2026 年汽车产业进入智能化、国产化深度迭代期，上海作为最大零部件产业集群城市，PLM 成为研发数字化的核心底座。AI+低代码能力成为新一代 PLM 标配。</div>
+      </div>
+      <div class="news">
+        <h3>璞华易研 PLM 助力材料研发迈入"智能推荐"时代</h3>
+        <div class="meta">璞华科技 · 7月</div>
+        <div class="desc">三新 PLM 项目启动，联合武汉理工大学，将 AI 辅助推荐引入材料研发流程，缩短研发周期。</div>
+      </div>
+      <div class="insight">
+        <strong>📌 研发信息化洞察</strong><br>
+        7 月 11-12 日汽车研发信息化领域呈现两条主线：一是 PLM 系统在汽车零部件产业集群中加速落地，AI+低代码成为新一代 PLM 的标配能力，国产替代进一步深入；二是车企跨界协同加速，广汽投资商业航天、国产 DRAM 突破 8600MT/s，汽车产业链与航天、半导体产业的边界持续模糊化。同时，华为"韬定律 V2"提出的 3D 堆叠新路径，可能对汽车芯片长期技术路线产生深远影响。
+      </div>
+    </div>
+    <div class="trend-section">
+      <div class="section-header"><span class="icon">📊</span><h2>趋势短评</h2></div>
+      <div class="trend-item">
+        <div class="trend-num">1</div>
+        <div>
+          <h4>硅谷巨头反目：苹果 vs OpenAI</h4>
+          <p>从紧密合作到对簿公堂，AI 硬件成为科技巨头必争之地。苹果自研 AI 芯片+英特尔代工，AI 芯片供应链格局面临重塑。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">2</div>
+        <div>
+          <h4>国产算力与模型双线突破</h4>
+          <p>"曙光 8000"十万卡落成+美团/腾讯大模型齐发，国产 AI 从"跟跑"进入"并跑"关键阶段。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">3</div>
+        <div>
+          <h4>具身智能：从实验室到手术台</h4>
+          <p>宇树 G1 登 Nature、京东 RoboBase 落地，机器人商业化在医疗和物流场景率先突破。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand">2026-07-12｜AI每日资讯简报</div>
+    <div>信息来源：36氪、机器之心、IT之家、快科技、Nature 等 ｜ 仅供内部参考</div>
+  </div>
+</div>
+</body>
+</html>
