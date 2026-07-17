@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026-07-18｜AI每日资讯简报</title>
+<meta property="og:title" content="2026-07-18｜AI每日资讯简报">
+<meta property="og:description" content="WAIC第二日荣耀阿里官宣Agentic OS｜Kimi K3开源2.8万亿参数｜华为昇腾950超节点1024卡真机｜AI眼镜耳机办公智能体密集发布｜特斯拉FSD订阅制登陆亚洲｜国产PLM市场42.3亿">
+<meta property="og:image" content="https://mars318.github.io/ai-daily-briefing/cover.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5; color: #333; line-height: 1.8; -webkit-font-smoothing: antialiased;
+  }
+  .wx-article { max-width: 677px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  .cover {
+    width: 100%; aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    position: relative; overflow: hidden;
+  }
+  .cover img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+  .cover-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .cover-tag {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9); font-size: 11px; padding: 3px 12px;
+    border-radius: 20px; margin-bottom: 16px; letter-spacing: 2px;
+  }
+  .cover h1 { color: #fff; font-size: 26px; font-weight: 700; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .cover .date { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 10px; }
+  .content { padding: 20px 16px 40px; }
+  .summary {
+    background: #f7f8fa; border-radius: 8px; padding: 16px;
+    margin-bottom: 20px; font-size: 14px; color: #666; line-height: 2;
+  }
+  .summary strong { color: #333; }
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0;
+  }
+  .section-header .icon { font-size: 18px; }
+  .section-header h2 { font-size: 17px; font-weight: 700; color: #1a1a1a; }
+  .news { padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+  .news:last-child { border-bottom: none; }
+  .news h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; line-height: 1.6; }
+  .news .meta { font-size: 12px; color: #999; margin-bottom: 4px; }
+  .news .desc { font-size: 14px; color: #555; line-height: 1.8; }
+  .tag-hot {
+    display: inline-block; background: #ff4d4f; color: #fff;
+    font-size: 10px; padding: 1px 6px; border-radius: 3px;
+    margin-right: 4px; vertical-align: middle; font-weight: 500;
+  }
+  .auto-section { background: #fffbf0; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  .auto-section .section-header { border-bottom-color: #ffe4b5; }
+  .sub-title {
+    font-size: 14px; font-weight: 600; color: #b8860b;
+    margin: 14px 0 8px; padding-left: 8px; border-left: 3px solid #f5a623;
+  }
+  .sub-title:first-of-type { margin-top: 0; }
+  .insight {
+    background: #fff8e6; border: 1px solid #ffe4b5; border-radius: 8px;
+    padding: 14px; margin-top: 14px; font-size: 13px; color: #5d4200; line-height: 1.9;
+  }
+  .insight strong { color: #b8860b; }
+  .trend-section { background: #f0fff4; border-radius: 8px; padding: 16px; }
+  .trend-section .section-header { border-bottom-color: #b7eb8f; }
+  .trend-item {
+    display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e8f5e9;
+  }
+  .trend-item:last-child { border-bottom: none; }
+  .trend-num {
+    width: 22px; height: 22px; border-radius: 50%; background: #52c41a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+  }
+  .trend-item h4 { font-size: 14px; font-weight: 600; color: #135200; margin-bottom: 2px; }
+  .trend-item p { font-size: 13px; color: #389e0d; line-height: 1.8; }
+  .footer {
+    text-align: center; padding: 24px 16px; font-size: 12px;
+    color: #b2b2b2; border-top: 1px solid #f0f0f0;
+  }
+  .footer .brand { color: #999; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wx-article">
+  <div class="cover">
+    <img src="cover.jpg" alt="AI Daily Briefing">
+    <div class="cover-overlay">
+      <div class="cover-tag">DAILY AI BRIEFING</div>
+      <h1>2026-07-18</h1>
+      <div class="date">AI每日资讯简报 · 星期六</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="summary">
+      <strong>今日看点：</strong>WAIC 2026第二日荣耀阿里官宣Agentic OS合作、Kimi K3开源2.8万亿参数刷新全球纪录、华为昇腾950超节点1024卡真机首秀、AI眼镜耳机办公智能体密集发布、特斯拉FSD订阅制登陆亚洲市场、国产PLM市场规模达42.3亿元。
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🔥</span><h2>AI 行业热点</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">头条</span>WAIC 2026第二日：荣耀阿里官宣Agentic OS合作，凯文·凯利助阵</h3>
+        <div class="meta">新浪科技 / 经济日报 · 7月18日</div>
+        <div class="desc">荣耀在WAIC举办"从数字屏幕到具身智能——物理世界新范式"分论坛，与阿里巴巴官宣重磅合作，方向指向下一代终端操作系统Agentic OS落地。《连线》杂志创始主编凯文·凯利、阿里许主洪等出席。</div>
+      </div>
+      <div class="news">
+        <h3>华为昇腾950超节点1024卡真机首秀：1 EFLOPS FP8算力</h3>
+        <div class="meta">人民财讯 / 中国经营报 · 7月17日</div>
+        <div class="desc">业界最大规模超节点真机首次线下亮相，单柜64卡起步，最大支持8192张昇腾计算卡高速互联，具备256TB全局单一虚拟地址空间，提供1 EFLOPS FP8算力，标志着国产AI算力进入超大规模商用阶段。</div>
+      </div>
+      <div class="news">
+        <h3>超节点赛道三强并跑：华为、中兴、天数智芯齐聚WAIC</h3>
+        <div class="meta">财联社 / IT之家 · 7月17日</div>
+        <div class="desc">WAIC 2026上华为昇腾950、中兴OEX超节点、天数智芯超节点产品集体亮相，AI算力正式进入"超节点时代"，国产厂商借助超节点架构打开与英伟达竞争新局面。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🧠</span><h2>大模型与技术</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">首发</span>Kimi K3重磅开源：2.8万亿参数刷新全球开源模型纪录</h3>
+        <div class="meta">月之暗面 / 凤凰科技 · 7月17日</div>
+        <div class="desc">月之暗面发布旗舰基座大模型Kimi K3，总参数2.8万亿，采用KDA混合线性注意力机制与注意力残差技术，原生支持视觉理解，拥有100万Token上下文窗口。完整权重定于7月27日前公开发布，成为全球首个迈入3万亿级别的开源模型。</div>
+      </div>
+      <div class="news">
+        <h3>OpenAI GPT-5.6全量上线：Codex并入ChatGPT推Work智能体</h3>
+        <div class="meta">太平洋科技 / 搜狐科技 · 7月10日</div>
+        <div class="desc">GPT-5.6系列三款模型（旗舰Sol、中端、轻量）正式上线，将独立Codex编码能力融入ChatGPT同一界面，同步推出原生智能体ChatGPT Work。Coding赛道中美三强（OpenAI、xAI、Anthropic）同周齐发。</div>
+      </div>
+      <div class="news">
+        <h3>美团LongCat-2.0开源：1.6万亿参数MoE全程国产芯片训练</h3>
+        <div class="meta">美团 / 头条新闻 · 7月6日</div>
+        <div class="desc">美团开源1.6万亿参数MoE架构大模型LongCat-2.0，在5万余张国产AI芯片上完成预训练，标志国产大模型预训练"换芯"取得实质突破，英伟达不可替代性正在松动。</div>
+      </div>
+      <div class="news">
+        <h3>GPT-6发布时间或大幅提前，GPT-5.x系列或将止步5.6</h3>
+        <div class="meta">行业爆料 / 搜狐科技 · 7月</div>
+        <div class="desc">有博主爆料OpenAI旗下GPT-6发布时间或将大幅提前，最快本月内空降，GPT-5.6或成GPT-5.x系列绝唱。OpenAI正加速向下一代架构迭代。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🚀</span><h2>产品与应用</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">重磅</span>李未可首发AI记忆眼镜亮相WAIC：799元起</h3>
+        <div class="meta">李未可 / 红星资本局 · 7月17日</div>
+        <div class="desc">AI创新品牌李未可在WAIC首日发布首款AI记忆眼镜，将大模型记忆管理能力下沉至端侧硬件，让AI眼镜从"记录工具"进化为"智能载体"，售价799元起，主打日常记忆管理与智能辅助。</div>
+      </div>
+      <div class="news">
+        <h3>千问发布AI智能体眼镜与Bose联名耳机：穿戴终端生态成型</h3>
+        <div class="meta">千问 / 凤凰网科技 · 7月17日</div>
+        <div class="desc">千问在WAIC推出升级版智能体眼镜与首款AI智能体耳机（联合Bose），AI穿戴终端从单一形态向多终端协同演进，构建端侧智能体生态。</div>
+      </div>
+      <div class="news">
+        <h3>金山办公两款AI智能体亮相：灵犀专业版+WPS Comate</h3>
+        <div class="meta">金山办公 / WAIC · 7月17日</div>
+        <div class="desc">金山办公以"AI办公效率合作伙伴"身份亮相WAIC，现场展示面向个人的灵犀专业版与面向组织的WPS Comate两款AI办公智能体，推动办公场景从工具向智能体进化。</div>
+      </div>
+      <div class="news">
+        <h3>智元远征A3 Ultra：唯一入选镇馆之宝的人形机器人</h3>
+        <div class="meta">智元机器人 / WAIC · 7月17日</div>
+        <div class="desc">智元商用全尺寸人形机器人远征A3 Ultra成为本届WAIC十大镇馆之宝中唯一入选的人形机器人，将于大会期间重磅发布，代表具身智能量产商用新阶段。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">📰</span><h2>国内动态</h2></div>
+      <div class="news">
+        <h3>中国开源大模型累计下载量突破100亿次</h3>
+        <div class="meta">头条新闻 · 7月17日</div>
+        <div class="desc">技术开放合作持续深化，阿里通义千问开源模型已支撑美国Airbnb平台AI客服系统，将问题解决时间从近3分钟缩短至秒级，中国开源模型全球影响力持续扩大。</div>
+      </div>
+      <div class="news">
+        <h3>AI从"顾问"变"员工"：2026智能体元年加速到来</h3>
+        <div class="meta">行业观察 / 36氪 · 7月</div>
+        <div class="desc">大模型构建AI大脑，智能体赋予AI行动能力。百度搭子、阶跃Agent OS、荣耀Agentic OS等商用智能体密集上线，AI正从对话工具进化为可自主执行任务的数字员工。</div>
+      </div>
+      <div class="news">
+        <h3>国产算力超节点时代开启：大模型预训练加速"换芯"</h3>
+        <div class="meta">财联社 / IT之家 · 7月</div>
+        <div class="desc">华为、中兴、天数智芯超节点产品齐聚WAIC，国产AI芯片在大模型预训练中的占比持续提升。美团LongCat-2.0全流程国产芯片训练成为标志性案例，算力国产替代进入加速期。</div>
+      </div>
+    </div>
+    <div class="auto-section">
+      <div class="section-header"><span class="icon">🚗</span><h2>汽车研发信息化专题</h2></div>
+      <div class="sub-title">智驾芯片与方案</div>
+      <div class="news">
+        <h3><span class="tag-hot">重点</span>小鹏慕尼黑对比特斯拉FSD：VLA二代各有优劣，不全面领先</h3>
+        <div class="meta">小鹏汽车 / 盖世汽车 · 7月16日</div>
+        <div class="desc">小鹏在德国慕尼黑技术沟通活动上，通用智能中心负责人刘先明公开承认小鹏第二代VLA智驾与特斯拉FSD各有优劣，不存在全面领先。物理AI成为技术新共识，商业化与全球化同步提速。</div>
+      </div>
+      <div class="news">
+        <h3>特斯拉FSD订阅制首次登陆亚洲：按月付费模式开启</h3>
+        <div class="meta">特斯拉 / 新浪汽车 · 7月</div>
+        <div class="desc">特斯拉在北美、中东下架FSD一次性买断服务后，上线全新订阅模式，如今亚洲市场FSD订阅制正式落地，用户可按月付费体验FSD智能驾驶，商业模式从"卖断"转向"订阅"。</div>
+      </div>
+      <div class="news">
+        <h3>特斯拉FSD研发逻辑曝光：Robotaxi优先策略</h3>
+        <div class="meta">行业报道 / 头条新闻 · 7月15日</div>
+        <div class="desc">特斯拉FSD研发路径核心秘密揭开：不为现有量产车跑完整无人驾驶大脑，而是先为算力更强的Robotaxi开发，再下放至消费级车型。350万老车主的FSD体验仍受硬件限制。</div>
+      </div>
+      <div class="sub-title">市场与测评</div>
+      <div class="news">
+        <h3>2026智驾排行榜：华为乾昆ADS 4.46分领跑，小鹏4.33分紧随</h3>
+        <div class="meta">P3中国 / 网易汽车 · 7月</div>
+        <div class="desc">P3中国最新测评显示华为乾昆ADS以4.46分居首，小鹏VLA二代4.33分紧随，理想4.06分。华为鸿蒙智行与小鹏稳坐第一梯队，理想蔚来紧随，小米极氪零跑奋力追赶。</div>
+      </div>
+      <div class="sub-title">PLM / 研发数字化</div>
+      <div class="news">
+        <h3>国产PLM市场规模达42.3亿元：鼎捷、用友、三品软件领跑</h3>
+        <div class="meta">赛迪顾问 / CSDN · 7月</div>
+        <div class="desc">赛迪顾问调研数据显示，国内PLM市场规模达42.3亿元，同比增长21.6%，增速远超企业级软件平均水平。鼎捷、用友、三品软件领跑本土市场，AI+低代码成新一代PLM标配。</div>
+      </div>
+      <div class="news">
+        <h3>2026汽车PLM选型指南：智能化转型核心引擎</h3>
+        <div class="meta">行业方案 / 头条新闻 · 7月</div>
+        <div class="desc">在汽车产业向电动化、智能化、网联化深度转型背景下，PLM系统成为整车及零部件企业破局研发周期压缩、供应链协同复杂化及多专业融合挑战的核心引擎，打通PLM-ERP-MES数据孤岛成关键。</div>
+      </div>
+      <div class="insight">
+        <strong>📌 研发信息化洞察</strong><br>
+        7月18日WAIC第二日，汽车研发信息化呈现三条主线：一是智驾方案竞争从"参数对比"走向"全球对标"，小鹏在慕尼黑公开对比特斯拉FSD，承认各有优劣，标志着中国智驾企业进入理性国际化竞争阶段；二是智驾商业模式加速变革，特斯拉FSD订阅制登陆亚洲，从"卖断"转向"按月付费"，将重塑智驾价值链；三是PLM市场持续高增长，国产PLM规模达42.3亿元（同比+21.6%），汽车零部件成为PLM渗透核心场景，PLM-ERP-MES数据打通成为车企数字化转型关键命题。
+      </div>
+    </div>
+    <div class="trend-section">
+      <div class="section-header"><span class="icon">📊</span><h2>趋势短评</h2></div>
+      <div class="trend-item">
+        <div class="trend-num">1</div>
+        <div>
+          <h4>智能体从"对话"走向"执行"</h4>
+          <p>荣耀Agentic OS、百度搭子、阶跃Agent OS密集落地，AI正从对话工具进化为可自主执行任务的数字员工，2026成为智能体元年。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">2</div>
+        <div>
+          <h4>超节点算力时代：国产替代加速</h4>
+          <p>华为昇腾950、中兴OEX、天数智芯超节点齐聚WAIC，美团LongCat全流程国产芯片训练，算力国产替代进入加速期。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">3</div>
+        <div>
+          <h4>AI硬件爆发：穿戴终端生态成型</h4>
+          <p>李未可AI记忆眼镜、千问智能体眼镜与Bose耳机、金山办公智能体密集发布，AI从云端走向端侧硬件，多终端协同生态加速构建。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand">2026-07-18｜AI每日资讯简报</div>
+    <div>信息来源：36氪、机器之心、第一财经、财联社、IT之家、盖世汽车、新浪科技等 ｜ 仅供内部参考</div>
+  </div>
+</div>
+</body>
+</html>
