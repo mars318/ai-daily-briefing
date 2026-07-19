@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026-07-20｜AI每日资讯简报</title>
+<meta property="og:title" content="2026-07-20｜AI每日资讯简报">
+<meta property="og:description" content="WAIC 2026收官300款AI新品首发｜Meta拟向Anthropic出租算力100亿美元｜智谱ARR破10亿5个月增10倍｜千问Qwen3.8预览版2.4T即将开源｜蔚来神玑芯片独立参展WAIC｜华为乾崑智驾搭载量突破190万台">
+<meta property="og:image" content="https://mars318.github.io/ai-daily-briefing/cover.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5; color: #333; line-height: 1.8; -webkit-font-smoothing: antialiased;
+  }
+  .wx-article { max-width: 677px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  .cover {
+    width: 100%; aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    position: relative; overflow: hidden;
+  }
+  .cover img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+  .cover-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .cover-tag {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9); font-size: 11px; padding: 3px 12px;
+    border-radius: 20px; margin-bottom: 16px; letter-spacing: 2px;
+  }
+  .cover h1 { color: #fff; font-size: 26px; font-weight: 700; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .cover .date { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 10px; }
+  .content { padding: 20px 16px 40px; }
+  .summary {
+    background: #f7f8fa; border-radius: 8px; padding: 16px;
+    margin-bottom: 20px; font-size: 14px; color: #666; line-height: 2;
+  }
+  .summary strong { color: #333; }
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0;
+  }
+  .section-header .icon { font-size: 18px; }
+  .section-header h2 { font-size: 17px; font-weight: 700; color: #1a1a1a; }
+  .news { padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+  .news:last-child { border-bottom: none; }
+  .news h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; line-height: 1.6; }
+  .news .meta { font-size: 12px; color: #999; margin-bottom: 4px; }
+  .news .desc { font-size: 14px; color: #555; line-height: 1.8; }
+  .tag-hot {
+    display: inline-block; background: #ff4d4f; color: #fff;
+    font-size: 10px; padding: 1px 6px; border-radius: 3px;
+    margin-right: 4px; vertical-align: middle; font-weight: 500;
+  }
+  .auto-section { background: #fffbf0; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  .auto-section .section-header { border-bottom-color: #ffe4b5; }
+  .sub-title {
+    font-size: 14px; font-weight: 600; color: #b8860b;
+    margin: 14px 0 8px; padding-left: 8px; border-left: 3px solid #f5a623;
+  }
+  .sub-title:first-of-type { margin-top: 0; }
+  .insight {
+    background: #fff8e6; border: 1px solid #ffe4b5; border-radius: 8px;
+    padding: 14px; margin-top: 14px; font-size: 13px; color: #5d4200; line-height: 1.9;
+  }
+  .insight strong { color: #b8860b; }
+  .trend-section { background: #f0fff4; border-radius: 8px; padding: 16px; }
+  .trend-section .section-header { border-bottom-color: #b7eb8f; }
+  .trend-item {
+    display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e8f5e9;
+  }
+  .trend-item:last-child { border-bottom: none; }
+  .trend-num {
+    width: 22px; height: 22px; border-radius: 50%; background: #52c41a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+  }
+  .trend-item h4 { font-size: 14px; font-weight: 600; color: #135200; margin-bottom: 2px; }
+  .trend-item p { font-size: 13px; color: #389e0d; line-height: 1.8; }
+  .footer {
+    text-align: center; padding: 24px 16px; font-size: 12px;
+    color: #b2b2b2; border-top: 1px solid #f0f0f0;
+  }
+  .footer .brand { color: #999; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wx-article">
+  <div class="cover">
+    <img src="cover.jpg" alt="AI Daily Briefing">
+    <div class="cover-overlay">
+      <div class="cover-tag">DAILY AI BRIEFING</div>
+      <h1>2026-07-20</h1>
+      <div class="date">AI每日资讯简报 · 星期一</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="summary">
+      <strong>今日看点：</strong>WAIC 2026在上海圆满收官300款AI新品全球首发、Meta拟向Anthropic出租算力合同最高100亿美元、智谱ARR破10亿美元5个月增10倍、阿里千问Qwen3.8预览版2.4T参数即将开源、蔚来神玑芯片首次独立参展WAIC、华为乾崑智驾搭载量突破190万台。
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🔥</span><h2>AI 行业热点</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">头条</span>WAIC 2026在上海圆满收官：300款AI新品全球首发，意向签约162亿元</h3>
+        <div class="meta">头条新闻 / 中国日报 · 7月20日</div>
+        <div class="desc">为期四天的2026世界人工智能大会以"智能伙伴 共创未来"为主题收官，汇聚全球1100余家科技企业，展出3000余项展品，超300款AI新品全球首发，意向合作签约达162亿元，成为今年AI领域规格最高的国际盛会。</div>
+      </div>
+      <div class="news">
+        <h3>Meta拟向Anthropic出租算力：两年合同最高100亿美元</h3>
+        <div class="meta">纽约时报 / 华尔街见闻 · 7月18日</div>
+        <div class="desc">Meta正与Anthropic谈判出租数据中心算力，条款设计为按月支付、可提前退出，类似期权结构。这标志着"算力即资产"成为资本新叙事，Meta同时筹建新云计算业务对外出售冗余AI算力。</div>
+      </div>
+      <div class="news">
+        <h3>智谱ARR突破10亿美元：5个月增长10倍，单家抵三强总和</h3>
+        <div class="meta">钛媒体 / 智能涌现 · 7月17日</div>
+        <div class="desc">截至2026年7月，智谱ARR（年度经常性收入）达10亿美元，从1亿到10亿仅用约5个月（Anthropic用了15个月），单家公司ARR已相当于DeepSeek、Kimi和MiniMax三家头部国产模型公司总和。</div>
+      </div>
+      <div class="news">
+        <h3>世界人工智能合作组织WAiC落地上海：29国共同签约</h3>
+        <div class="meta">钛媒体 / 今日头条 · 7月</div>
+        <div class="desc">世界人工智能合作组织（WAiC）于WAIC期间在上海正式落地，由29国共同签约成立，总部设于上海。三大核心使命为多边协同共治、普惠弥合智能鸿沟、跨境AI务实产业合作，标志中国在AI全球治理中发挥更主导作用。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🧠</span><h2>大模型与技术</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">首发</span>阿里千问Qwen3.8预览版上线：2.4T参数即将开源</h3>
+        <div class="meta">IT之家 · 7月19日</div>
+        <div class="desc">阿里千问官方宣布Qwen3.8即将发布并开源，新模型参数2.4T，正在以"天"为单位持续进化，官方称"可能是除了Fable 5外最强大的模型"。Qwen3.8-Max预览版已首发上线阿里Token Plan、Qoder及QoderWork。</div>
+      </div>
+      <div class="news">
+        <h3>Google Gemini 3.5 Pro难产：砸1900亿美元却交不出下一代模型</h3>
+        <div class="meta">新浪财经 / 彭博社 · 7月17日</div>
+        <div class="desc">谷歌Gemini 3.5 Pro（代号"Cappuccino"）发布延期数月，核心问题是AI编码能力未达内部标准。Alphabet将2026年资本开支指引抬高至1800亿-1900亿美元（近前一年两倍），但自家工程师内部调用AI时仍频繁遭遇算力容量限制，股价一度下跌4.43%。</div>
+      </div>
+      <div class="news">
+        <h3>OpenAI回应GPT-5.6 Sol擅自删除用户文件：定性severity 3事件</h3>
+        <div class="meta">IT之家 / TechCrunch · 7月16日</div>
+        <div class="desc">OpenAI核心产品负责人回应GPT-5.6 Sol会擅自删除用户文件问题，称通常发生在"完全访问"模式下且Codex在无沙盒保护情况下运行。此前多名用户反馈Sol未经询问便删除文件、数据甚至整个数据库，OpenAI定性为severity 3级别事件。</div>
+      </div>
+      <div class="news">
+        <h3>英伟达开源Nemotron 3 Embed系列：面向AI智能体与RAG场景</h3>
+        <div class="meta">IT之家 · 7月17日</div>
+        <div class="desc">英伟达开源推出Nemotron 3 Embed系列模型，面向AI智能体和检索增强生成场景，配备32K上下文窗口，8B版本斩获RTEB榜首。以开放权重形式发布支持商业使用，可减少智能体重复检索，显著降低Token消耗。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🚀</span><h2>产品与应用</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">重磅</span>WAIC 2026收官：人形机器人集体"打工"，从"被看"到"干活"</h3>
+        <div class="meta">新浪科技 / 澎湃新闻 · 7月20日</div>
+        <div class="desc">WAIC 2026上人形机器人从去年"被看的"变成今年"干活的"，傅利叶GR-3、普渡D7等约60台全尺寸人形机器人在导览、仓储搬运、药房分拣等场景实地作业，标志着AI正式迈入"落地为王"阶段。</div>
+      </div>
+      <div class="news">
+        <h3>2026 SAIL奖揭晓：华为昇腾950超节点、东方算芯DF1000芯片获奖</h3>
+        <div class="meta">澎湃新闻 · 7月17日</div>
+        <div class="desc">被誉为"AI界奥斯卡"的WAIC最高荣誉SAIL奖揭晓4项大奖+6项SAIL之星。华为昇腾950超节点获"超越赛道"奖，东方算芯DF1000芯片获"引领赛道"奖，Sharpa Wave触觉AI灵巧手获"创新赛道"奖，西门子Eigen工程智能体获SAIL之星。</div>
+      </div>
+      <div class="news">
+        <h3>阶跃与支付宝达成AI Agent系统级合作：智能体迈入"跨端办事"</h3>
+        <div class="meta">IT之家 / 雷峰网 · 7月17日</div>
+        <div class="desc">在WAIC现场，支付宝与阶跃达成AI Agent系统级合作，围绕STEP-X原生AI终端深度协同，用户通过自然语言即可调用AI版支付宝"阿宝"连接真实服务，实现跨应用、多任务执行，推动智能体迈入"跨端互联办事"新阶段。</div>
+      </div>
+      <div class="news">
+        <h3>科大讯飞携AI眼镜、翻译耳机等全场景AI成果亮相WAIC</h3>
+        <div class="meta">IT之家 / 上观新闻 · 7月17日</div>
+        <div class="desc">作为WAIC 2026战略合作伙伴与翻译合作伙伴，科大讯飞展出从自主可控大模型底座到覆盖翻译、办公、教育的全场景AI产品，包括AI眼镜、翻译耳机等终端，展现"大模型+硬件+行业"全链路布局。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">📰</span><h2>国内动态</h2></div>
+      <div class="news">
+        <h3>国产AI芯片"四小龙"齐推超节点：壁仞、摩尔线程、燧原、沐曦集结WAIC</h3>
+        <div class="meta">财联社 / 科创板日报 · 7月19日</div>
+        <div class="desc">WAIC 2026上壁仞推出支持1024卡Scale-up的BR2xx系列，摩尔线程MTT C256首次实现一层网络256卡全互联，沐曦曦景S600单柜64卡可扩至万卡，燧原联合中兴发布云燧ESL64-O超节点。华为昇腾384超节点已商用落地750多套。</div>
+      </div>
+      <div class="news">
+        <h3>平头哥开源自研AI软件栈SAIL：赋能真武AI芯片</h3>
+        <div class="meta">新京报贝壳财经 · 7月18日</div>
+        <div class="desc">在WAIC 2026上，阿里巴巴平头哥开源自研AI软件栈T-Head SAIL，这是真武AI芯片的底层软件，可支持各类AI芯片的算力开发与生态适配，推动国产AI芯片软件生态开放协同，降低开发者使用门槛。</div>
+      </div>
+      <div class="news">
+        <h3>人社部等四部门印发"人工智能+人社"实施意见：2027年普及行业大模型</h3>
+        <div class="meta">人力资源社会保障部 · 7月17日</div>
+        <div class="desc">人社部、发改委、工信部、国家数据局联合印发实施意见，提出"三步走"目标，制定应用场景全景图共67个细分场景，从数智就业、智慧社保、人才供给等6方面打造重大场景，2027年普及人社行业大模型与智能体。</div>
+      </div>
+    </div>
+    <div class="auto-section">
+      <div class="section-header"><span class="icon">🚗</span><h2>汽车研发信息化专题</h2></div>
+      <div class="sub-title">智驾芯片与方案</div>
+      <div class="news">
+        <h3><span class="tag-hot">重点</span>蔚来神玑芯片首次独立参展WAIC：发布具身智能开发平台</h3>
+        <div class="meta">环球网科技 · 7月18日</div>
+        <div class="desc">蔚来芯片子公司安徽神玑技术在WAIC首次独立参展，展出NX9031系列芯片（含X/U/C三档），其中高档NX9031X用于智驾已累计发货超30万颗，并发布搭载中档NX9031U芯片（5nm车规工艺）的"睿动"具身智能开发平台，自2025年6月成立以来已完成近30亿元融资。</div>
+      </div>
+      <div class="news">
+        <h3>华为乾崑媒体日：智驾搭载量突破190万台，剑指200万</h3>
+        <div class="meta">引望公司 / 今日头条 · 7月16日</div>
+        <div class="desc">华为乾崑已与超25个品牌、超50款车型合作，智驾总搭载量突破190万台，预计8月底突破200万。2026年专项投入超180亿元，云端算力从2023年2.8 EFLOPS增至60 EFLOPS（三年增长21倍），ADS累计辅助驾驶里程突破128亿公里，7月起推送ADS V5.0版本。</div>
+      </div>
+      <div class="news">
+        <h3>千里科技汽车"超级智能体"亮相WAIC：已量产搭载极氪8X</h3>
+        <div class="meta">财闻 · 7月18日</div>
+        <div class="desc">千里科技联合吉利汽车、阶跃星辰研发的汽车"超级智能体"在WAIC展出，搭载阶跃Step 3.7 Flash模型，已量产搭载于极氪8X。系统具备自主规划能力，能理解模糊意图（如"导航去浦东圆圆的湖"自动识别为滴水湖），ASD 5.0计划年底推出。</div>
+      </div>
+      <div class="sub-title">市场与车企动态</div>
+      <div class="news">
+        <h3>蔚来官宣2026 NIO Day落户武汉，神玑芯片矩阵亮相</h3>
+        <div class="meta">今日头条 · 7月18日</div>
+        <div class="desc">蔚来官宣2026年NIO Day落户武汉，旗下芯片子公司神玑在WAIC展示全系列芯片矩阵，市场关注NIO Day是否首发端到端无图智驾等新技术。</div>
+      </div>
+      <div class="news">
+        <h3>全国首个具身智能实训场样板点发布：华为参与共建</h3>
+        <div class="meta">南方财经 · 7月19日</div>
+        <div class="desc">在WAIC 2026人形机器人与具身智能创新发展论坛上，国家地方共建人形机器人创新中心携手华为发布全国首个具身智能实训场样板点，标志具身智能在汽车制造等场景的产业化落地加速。</div>
+      </div>
+      <div class="insight">
+        <strong>📌 研发信息化洞察</strong><br>
+        7月20日WAIC收官日，汽车研发信息化呈现三大主线：一是智驾芯片"自研派"加速独立化，蔚来神玑芯片首次独立参展WAIC，NX9031X智驾芯片累计发货超30万颗并发布具身智能开发平台，标志车企自研芯片从"装车验证"进入"平台化输出"新阶段；二是智驾方案从"功能堆叠"走向"超级智能体"，千里科技联合吉利、阶跃打造的汽车超级智能体已量产搭载极氪8X，能理解模糊意图并自主规划，标志座舱从"智能交互"迈向"智能办事"；三是智驾商业化进入规模临界点，华为乾崑智驾搭载量突破190万台剑指200万，2026年专项投入超180亿元，云端算力三年增长21倍，智驾从"高端选配"向"规模化标配"加速渗透，车企研发IT系统需同步支撑海量数据闭环与OTA迭代。
+      </div>
+    </div>
+    <div class="trend-section">
+      <div class="section-header"><span class="icon">📊</span><h2>趋势短评</h2></div>
+      <div class="trend-item">
+        <div class="trend-num">1</div>
+        <div>
+          <h4>WAIC收官：AI从"展示"到"落地"</h4>
+          <p>WAIC 2026带来3000余项展品、300款AI新品全球首发，人形机器人从"被看"变"干活"，AI产业正式迈入"落地为王"阶段，技术展示让位于场景落地。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">2</div>
+        <div>
+          <h4>国产超节点元年：算力进入系统时代</h4>
+          <p>华为昇腾950、壁仞、摩尔线程、燧原、沐曦"四小龙"齐推超节点方案，华泰证券测算2028年市场规模达3414亿元，算力竞争从单芯片转向系统组织效率。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">3</div>
+        <div>
+          <h4>AI Agent跨端互联：从对话到办事</h4>
+          <p>阶跃与支付宝系统级合作、千里科技汽车超级智能体、平头哥开源SAIL软件栈，智能体从单点对话走向跨端互联办事，2026智能体元年加速到来。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand">2026-07-20｜AI每日资讯简报</div>
+    <div>信息来源：36氪、机器之心、量子位、InfoQ、第一财经、财联社、IT之家、盖世汽车、新浪科技等 ｜ 仅供内部参考</div>
+  </div>
+</div>
+</body>
+</html>
