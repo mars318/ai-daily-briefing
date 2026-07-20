@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026-07-21｜AI每日资讯简报</title>
+<meta property="og:title" content="2026-07-21｜AI每日资讯简报">
+<meta property="og:description" content="工信部AI开源大模型全球下载破100亿次｜月之暗面Kimi K3登顶全球代码榜成最大开源模型｜Anthropic宣布Claude Fable 5永久可用｜零一万物敲定2027年港股上市｜比亚迪深化地平线智驾合作HSD 2.0量产在即｜小鹏MONA L03慕尼黑首发一套VLA模型打通中欧智驾">
+<meta property="og:image" content="https://mars318.github.io/ai-daily-briefing/cover.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5; color: #333; line-height: 1.8; -webkit-font-smoothing: antialiased;
+  }
+  .wx-article { max-width: 677px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  .cover {
+    width: 100%; aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    position: relative; overflow: hidden;
+  }
+  .cover img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+  .cover-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .cover-tag {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9); font-size: 11px; padding: 3px 12px;
+    border-radius: 20px; margin-bottom: 16px; letter-spacing: 2px;
+  }
+  .cover h1 { color: #fff; font-size: 26px; font-weight: 700; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .cover .date { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 10px; }
+  .content { padding: 20px 16px 40px; }
+  .summary {
+    background: #f7f8fa; border-radius: 8px; padding: 16px;
+    margin-bottom: 20px; font-size: 14px; color: #666; line-height: 2;
+  }
+  .summary strong { color: #333; }
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0;
+  }
+  .section-header .icon { font-size: 18px; }
+  .section-header h2 { font-size: 17px; font-weight: 700; color: #1a1a1a; }
+  .news { padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+  .news:last-child { border-bottom: none; }
+  .news h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; line-height: 1.6; }
+  .news .meta { font-size: 12px; color: #999; margin-bottom: 4px; }
+  .news .desc { font-size: 14px; color: #555; line-height: 1.8; }
+  .tag-hot {
+    display: inline-block; background: #ff4d4f; color: #fff;
+    font-size: 10px; padding: 1px 6px; border-radius: 3px;
+    margin-right: 4px; vertical-align: middle; font-weight: 500;
+  }
+  .auto-section { background: #fffbf0; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  .auto-section .section-header { border-bottom-color: #ffe4b5; }
+  .sub-title {
+    font-size: 14px; font-weight: 600; color: #b8860b;
+    margin: 14px 0 8px; padding-left: 8px; border-left: 3px solid #f5a623;
+  }
+  .sub-title:first-of-type { margin-top: 0; }
+  .insight {
+    background: #fff8e6; border: 1px solid #ffe4b5; border-radius: 8px;
+    padding: 14px; margin-top: 14px; font-size: 13px; color: #5d4200; line-height: 1.9;
+  }
+  .insight strong { color: #b8860b; }
+  .trend-section { background: #f0fff4; border-radius: 8px; padding: 16px; }
+  .trend-section .section-header { border-bottom-color: #b7eb8f; }
+  .trend-item {
+    display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e8f5e9;
+  }
+  .trend-item:last-child { border-bottom: none; }
+  .trend-num {
+    width: 22px; height: 22px; border-radius: 50%; background: #52c41a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+  }
+  .trend-item h4 { font-size: 14px; font-weight: 600; color: #135200; margin-bottom: 2px; }
+  .trend-item p { font-size: 13px; color: #389e0d; line-height: 1.8; }
+  .footer {
+    text-align: center; padding: 24px 16px; font-size: 12px;
+    color: #b2b2b2; border-top: 1px solid #f0f0f0;
+  }
+  .footer .brand { color: #999; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wx-article">
+  <div class="cover">
+    <img src="cover.jpg" alt="AI Daily Briefing">
+    <div class="cover-overlay">
+      <div class="cover-tag">DAILY AI BRIEFING</div>
+      <h1>2026-07-21</h1>
+      <div class="date">AI每日资讯简报 · 星期二</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="summary">
+      <strong>今日看点：</strong>工信部披露AI开源大模型全球下载破100亿次、月之暗面Kimi K3登顶全球代码榜成最大开源模型、Anthropic宣布Claude Fable 5永久可用、零一万物敲定2027年港股上市、比亚迪深化地平线智驾合作HSD 2.0量产在即、小鹏MONA L03慕尼黑首发一套VLA模型打通中欧智驾。
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🔥</span><h2>AI 行业热点</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">头条</span>工信部：AI开源大模型全球下载破100亿次，制造业AI普及率超30%</h3>
+        <div class="meta">新华社 / 国新办 · 7月20日</div>
+        <div class="desc">工信部在国新办上半年工业和信息化发展情况新闻发布会上披露，我国人工智能开源大模型全球累计下载量突破100亿次，规模以上制造业企业AI技术应用普及率超30%，标志国产开源大模型全球影响力进入新量级。</div>
+      </div>
+      <div class="news">
+        <h3>OpenAI高管公开批评Kimi K3开源，引发硅谷"开源vs闭源"激辩</h3>
+        <div class="meta">IT之家 / Business Insider · 7月20日</div>
+        <div class="desc">OpenAI新任战略负责人Dean Ball发文称对中国允许如此强大模型开源"感到惊讶"，预测美政府或围绕中国开放权重模型制造监管风险，遭David Sacks等硅谷人士驳斥为"监管俘获"，折射中美AI竞争新焦点转向开源生态。</div>
+      </div>
+      <div class="news">
+        <h3>零一万物（李开复）敲定2027年港股上市，在手合同超15亿</h3>
+        <div class="meta">新浪科技 / 东方财富 · 7月20日</div>
+        <div class="desc">李开复创办的零一万物正式公布上市计划，目标2027年登陆港交所，正调整股权架构、推进Pre-IPO融资，计划明年实现季度盈利。2025年全年营收2.5亿，截至今年5月在手合同超15亿，是国内商业化落地最好的AI初创之一。</div>
+      </div>
+      <div class="news">
+        <h3>国产CoPoS玻璃基板先进封装样品发布，比台积电量产计划提前两年多</h3>
+        <div class="meta">寰宇电报 / WAIC 2026 · 7月19日</div>
+        <div class="desc">燧原科技联合先封在WAIC推出国内首款CoPoS玻璃基板先进封装样品，该技术台积电规划2028下半年才量产，国内已拿出可用成品实现超车。CoPoS材料利用率超90%（传统硅封装不到70%），可大幅降低高端AI算力芯片制造成本。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🧠</span><h2>大模型与技术</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">首发</span>Anthropic官宣Claude Fable 5永久可用，终结"限时下架"悬念</h3>
+        <div class="meta">36氪 / 新智元 · 7月20日</div>
+        <div class="desc">Anthropic宣布自7月20日起Claude Fable 5永久包含在Max和Team Premium订阅中（额度限50%），此前Fable 5曾因合规被禁19天、多次延期。此举被普遍认为与Kimi K3、GPT-5.6带来的竞争压力直接相关。</div>
+      </div>
+      <div class="news">
+        <h3>月之暗面Kimi K3登顶全球代码榜，2.8万亿参数成全球最大开源模型</h3>
+        <div class="meta">新华社 / 新浪科技 · 7月16日</div>
+        <div class="desc">月之暗面发布新一代开源模型Kimi K3，参数规模2.8万亿（MoE架构），支持100万token上下文，发布数小时即登顶Arena前端代码榜（1679分），超越Claude Fable 5与GPT-5.6 Sol，为中国大模型首次在该权威榜单夺魁，完整权重将于7月27日前向全球开发者免费开放。</div>
+      </div>
+      <div class="news">
+        <h3>商汤发布旗舰SenseNova U1 Pro，多模态智能体实现长程任务闭环</h3>
+        <div class="meta">钛媒体 / 商汤科技 · 7月18日</div>
+        <div class="desc">商汤在WAIC发布大模型旗舰新品SenseNova U1 Pro，定位面向长程任务的交付级原生多模态智能体基座，基于NEO-unify内核架构打破理解与生成割裂，具备原生8K超清输出与长程Agentic闭环思维，正式版将于8月上线。</div>
+      </div>
+      <div class="news">
+        <h3>华尔街分析：Kimi K3触发"杰文斯悖论"，效率提升反推高芯片需求</h3>
+        <div class="meta">新浪财经 / 投资者墙 · 7月21日</div>
+        <div class="desc">花旗和美银证券分析称，Kimi K3以极低成本实现接近顶尖模型能力，可能触发"杰文斯悖论"——技术效率提升降低单位使用成本后，总资源消耗不降反升，服务器DDR5、eSSD等通用内存需求仍会增加，未必让美国AI巨头削减算力投入。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🚀</span><h2>产品与应用</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">重磅</span>千问AI眼镜升级"智能体眼镜"，同步首发AI智能体耳机</h3>
+        <div class="meta">中国经营报 · 7月17日</div>
+        <div class="desc">阿里千问宣布AI眼镜正式升级为智能体眼镜，实现从"能听会说"到"能看会想"的跨越，支持持续聆听、读懂眼神、感知环境与体征监测，同步亮相与Bose联合打造的首款AI智能体耳机，眼镜与耳机共享同一套智能体大脑。</div>
+      </div>
+      <div class="news">
+        <h3>智象未来发布全球首个无限时长内容创作智能体"vivago R1"</h3>
+        <div class="meta">新浪科技 · 7月20日</div>
+        <div class="desc">智象未来在WAIC现场发布全球首款无限时长内容创作多模态智能体vivago R1，打破行业15-30秒短镜头生成限制，支持任意时长视频连续生成，半小时内可产出分钟级成片，内容有效可用成功率提升至85%。</div>
+      </div>
+      <div class="news">
+        <h3>荣耀Robot Phone全渠道开启预约，全球首台"机器人手机"亮相</h3>
+        <div class="meta">今日头条 / 科技媒体 · 7月18日</div>
+        <div class="desc">荣耀CEO李健在WAIC官宣全球首款机器人手机Robot Phone全渠道开启预约，机身整合四自由度云台系统作为智能体执行器，搭载骁龙8 Gen 5至尊版，将于第三季度上市，开启"手机进化为生命体"的具身交互新赛道。</div>
+      </div>
+      <div class="news">
+        <h3>傅利叶"具身之家"全球首发：机器人听懂"我渴了"即可递水</h3>
+        <div class="meta">证券时报 / AI日报 · 7月18日</div>
+        <div class="desc">傅利叶在WAIC首次发布面向居家陪伴的全链路技术Demo"具身之家"，人形机器人GR-3化身智能管家，能自主理解"我渴了"等模糊指令、结合空间语义地图定位物品并规划路径完成取物递送，同步发布首款高负载轮式双臂机器人GRW。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">📰</span><h2>国内动态</h2></div>
+      <div class="news">
+        <h3>月之暗面已向投资人发送上市议案，预计最快6个月内赴港IPO</h3>
+        <div class="meta">财联社 / 科创板日报 · 7月19日</div>
+        <div class="desc">头部大模型企业月之暗面（Kimi）已向投资人发送上市议案，预计最快6个月内完成港股上市。该公司今年6月ARR达3亿美元，3个月翻了3倍；7月16日发布的Kimi K3在Code Arena超越多家国际对手，公司认为上市时机已成熟。</div>
+      </div>
+      <div class="news">
+        <h3>长鑫科技IPO中签号出炉：约770万个，7月27日挂牌上市</h3>
+        <div class="meta">财联社 / 腾讯新闻 · 7月20日</div>
+        <div class="desc">长鑫科技披露A股网上中签结果，中签号码共约770.22万个，网上发行认购款达333.5亿元。作为2026年科创板体量最大的硬科技IPO项目，长鑫科技将于7月27日正式挂牌上市，标志国产存储芯片龙头资本化进程迈出关键一步。</div>
+      </div>
+      <div class="news">
+        <h3>红熊AI完成数亿元A+轮融资，投后估值接近30亿元</h3>
+        <div class="meta">36氪 · 7月20日</div>
+        <div class="desc">红熊AI宣布完成数亿元人民币A+轮融资，为15个月内第6轮融资。资金将深化"AI记忆科学"研究，推动OpenBear通用大模型与MemoryBear记忆科学系统融合，加速智能客服、智能营销、ChatBI与智能教育四大场景覆盖。</div>
+      </div>
+    </div>
+    <div class="auto-section">
+      <div class="section-header"><span class="icon">🚗</span><h2>汽车研发信息化专题</h2></div>
+      <div class="sub-title">智驾芯片与方案</div>
+      <div class="news">
+        <h3><span class="tag-hot">重点</span>引望宣布推送华为乾崑智驾ADS 5，引入WEWA 2.0架构</h3>
+        <div class="meta">电厂 / 36氪 · 7月20日</div>
+        <div class="desc">引望公司在华为乾崑媒体日宣布将推送乾崑智驾ADS 5，采用WEWA 2.0架构进化为面向自动驾驶的AI智能体。2026年研发投入预计达180亿元，算力投入3年增长21倍达60 EFLOPS，未来5年至少再投入700亿元，按计划9-10月推出脱困绕行增强版。</div>
+      </div>
+      <div class="news">
+        <h3>比亚迪深化与地平线智驾战略合作，HSD 2.0量产在即</h3>
+        <div class="meta">news18a汽车 / 德意志银行研报 · 7月14日</div>
+        <div class="desc">比亚迪确立地平线为智能化体系最核心长期技术协作平台，全新项目优先落地征程6系列智驾芯片、星空6P舱驾一体芯片及BPU架构IP授权三大产品，HSD 2.0城区智驾方案将优先搭载比亚迪车型加速量产，采用"硬件双轨、软件同构"模式，高端璇玑A3自研芯片全面采用地平线BPU IP授权。</div>
+      </div>
+      <div class="news">
+        <h3>蔚来1.58亿元参与长鑫科技IPO战略配售，加码车规级存储芯片</h3>
+        <div class="meta">红星资本局 / 证券时报 · 7月15日</div>
+        <div class="desc">蔚来现身长鑫科技科创板IPO战略配售名单，承诺认购1.58亿元，锁定期18个月。双方将围绕车规级LPDDR4X、LPDDR5X存储芯片展开联合开发与定点供货，李斌表示存储芯片已成影响整车成本的关键变量，蔚来最新一代车型单车芯片用量超4000片。</div>
+      </div>
+      <div class="sub-title">PLM / BOM / MES 制造信息化</div>
+      <div class="news">
+        <h3>蔚来先进制造新桥二工厂入选2026年度安徽省先进级智能工厂</h3>
+        <div class="meta">合肥日报 / 中国网 · 7月15日</div>
+        <div class="desc">安徽省工信厅公布2026年度先进级智能工厂名单，蔚来先进制造新桥二工厂上榜。该工厂地下铺设90公里光纤构建数字化"神经中枢网络"，自研工业AI算法让80%的制造场景实现AI智能决策，并应用"魔方"车辆存取平台、"飞地"智能装配岛等全球首创技术实现高效柔性化生产。</div>
+      </div>
+      <div class="news">
+        <h3>江汽集团尊界超级工厂引入华为盘古CV大模型，缺陷拦截率达99.99%</h3>
+        <div class="meta">合肥日报 / 中国网 · 7月15日</div>
+        <div class="desc">江汽集团尊界超级工厂将AI深度嵌入生产核心环节，引入华为盘古CV大模型后，单工位仅需50-100张样本图片即可完成模型微调训练，缺陷拦截率达99.99%，1500多个检测场景实现"一模型通用"，大幅压缩新车型产线适配周期。</div>
+      </div>
+      <div class="sub-title">市场与车企动态</div>
+      <div class="news">
+        <h3>小鹏MONA L03慕尼黑全球首发，一套VLA物理AI模型打通中欧智驾</h3>
+        <div class="meta">今日头条 / 汽车行业媒体 · 7月16日</div>
+        <div class="desc">小鹏汽车在德国慕尼黑品牌日活动上全球首发MONA L03，国内售价12.38万-15.68万元，将同步登陆全球65个国家市场。小鹏成为国内首家以同一套第二代图灵VLA物理AI模型打通中欧复杂路况的车企，无需大规模本地化数据重训即可适配欧洲窄路、大曲率弯道等场景，目前小鹏欧洲用户突破6万。</div>
+      </div>
+      <div class="news">
+        <h3>Honda与广汽集团签署战略续约协议，合作期延长至2038年</h3>
+        <div class="meta">盖世汽车 · 7月20日</div>
+        <div class="desc">Honda与广汽集团就广汽本田合资合作项目正式签署战略续约协议，维持50:50股比不变，合作期限延长至2038年。广汽本田正从"单向技术引进"向"双向赋能、深度协同研发"转型，2027年将迎来三款全新车型密集投放，覆盖燃油、混动、纯电三大路线，累计销量已突破1100万台。</div>
+      </div>
+      <div class="news">
+        <h3>中汽数据发布2026上半年新能源销量TOP100，理想i6进入前三</h3>
+        <div class="meta">中汽数研 / 今日头条 · 7月20日</div>
+        <div class="desc">中汽数研发布2026年上半年新能源车型销量TOP100榜单，吉利星愿以19.42万辆登顶，理想i6（12.04万辆）、小米YU7（10.46万辆）分列第三、第四位。新势力梯队呈现"理想稳、蔚来活、小鹏承压"分化格局，理想i6作为新车型直接冲入前三。</div>
+      </div>
+      <div class="insight">
+        <strong>📌 研发信息化洞察</strong><br>
+        本周汽车研发信息化呈现三大主线：一是智驾芯片自研与国产替代进入"深水区"，比亚迪将地平线确立为最核心长期技术平台并采用"BPU IP授权+自研芯片"双轨同构模式，蔚来通过自研神玑NX9031加战略投资长鑫科技从"智驾税"和"存储芯片涨价"两端夺回成本控制权，引望（华为乾崑）则将2026年研发投入加码至180亿元、算力投入3年增长21倍；二是制造MES与智能工厂从"单点AI"迈向"全场景AI决策"，蔚来新桥二工厂80%制造场景实现AI智能决策、江汽尊界超级工厂用华为盘古CV大模型将缺陷拦截率推至99.99%，工业大模型正从质检环节向产线适配、生产调度、供应链协同全链路渗透；三是市场格局加速分化倒逼研发效率提升，整车制造利润率跌至1.5%下，唯有具备自研芯片、自研操作系统、上游资源掌控力的车企才能获得估值溢价，小鹏以同一套VLA物理AI模型打通中欧智驾预示研发数字化红利开始向"一研发体系服务全球市场"演进。
+      </div>
+    </div>
+    <div class="trend-section">
+      <div class="section-header"><span class="icon">📊</span><h2>趋势短评</h2></div>
+      <div class="trend-item">
+        <div class="trend-num">1</div>
+        <div>
+          <h4>开源倒逼闭源让利：国产模型改写竞争格局</h4>
+          <p>Kimi K3登顶全球代码榜成最大开源模型，直接推动Claude Fable 5转永久可用、引发OpenAI高管言论，中国开源力量正从"追赶者"变为"定价者"，倒逼美国闭源巨头让利。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">2</div>
+        <div>
+          <h4>AI资本化加速：大模型公司密集冲刺IPO</h4>
+          <p>零一万物、月之暗面相继敲定上市计划，长鑫科技、红熊AI融资落地，AI产业从"烧钱研发"进入"资本化兑现"阶段，商业化落地能力成为估值核心标尺。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">3</div>
+        <div>
+          <h4>智驾研发全球化：一套模型服务多市场</h4>
+          <p>小鹏以同一套VLA物理AI模型打通中欧智驾、华为乾崑ADS 5升级AI智能体架构，智驾研发从"本地化重训"走向"一研发体系服务全球"，研发数字化红利加速释放。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand">2026-07-21｜AI每日资讯简报</div>
+    <div>信息来源：36氪、机器之心、量子位、InfoQ、第一财经、财联社、IT之家、盖世汽车、新浪科技等 ｜ 仅供内部参考</div>
+  </div>
+</div>
+</body>
+</html>
