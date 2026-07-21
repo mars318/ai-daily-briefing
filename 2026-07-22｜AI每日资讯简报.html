@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026-07-22｜AI每日资讯简报</title>
+<meta property="og:title" content="2026-07-22｜AI每日资讯简报">
+<meta property="og:description" content="WAIC 2026闭幕：203.6亿意向采购国产AI从秀肌肉到签单子｜国产算力全面进入超节点竞争时代华为昇腾950真机亮相｜阿里Qwen3.8-Max预览版2.4万亿参数开源｜面壁智能发布首个具身智能成果MiniCPM-Robot｜车企扎堆自研智驾芯片比亚迪璇玑A3量产蔚来神玑参展WAIC｜特斯拉德国工厂扩产年产能提至37.5万辆">
+<meta property="og:image" content="https://mars318.github.io/ai-daily-briefing/cover.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f5f5; color: #333; line-height: 1.8; -webkit-font-smoothing: antialiased;
+  }
+  .wx-article { max-width: 677px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  .cover {
+    width: 100%; aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    position: relative; overflow: hidden;
+  }
+  .cover img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+  .cover-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
+  }
+  .cover-tag {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9); font-size: 11px; padding: 3px 12px;
+    border-radius: 20px; margin-bottom: 16px; letter-spacing: 2px;
+  }
+  .cover h1 { color: #fff; font-size: 26px; font-weight: 700; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .cover .date { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 10px; }
+  .content { padding: 20px 16px 40px; }
+  .summary {
+    background: #f7f8fa; border-radius: 8px; padding: 16px;
+    margin-bottom: 20px; font-size: 14px; color: #666; line-height: 2;
+  }
+  .summary strong { color: #333; }
+  .section { margin-bottom: 24px; }
+  .section-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0;
+  }
+  .section-header .icon { font-size: 18px; }
+  .section-header h2 { font-size: 17px; font-weight: 700; color: #1a1a1a; }
+  .news { padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+  .news:last-child { border-bottom: none; }
+  .news h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; line-height: 1.6; }
+  .news .meta { font-size: 12px; color: #999; margin-bottom: 4px; }
+  .news .desc { font-size: 14px; color: #555; line-height: 1.8; }
+  .tag-hot {
+    display: inline-block; background: #ff4d4f; color: #fff;
+    font-size: 10px; padding: 1px 6px; border-radius: 3px;
+    margin-right: 4px; vertical-align: middle; font-weight: 500;
+  }
+  .auto-section { background: #fffbf0; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+  .auto-section .section-header { border-bottom-color: #ffe4b5; }
+  .sub-title {
+    font-size: 14px; font-weight: 600; color: #b8860b;
+    margin: 14px 0 8px; padding-left: 8px; border-left: 3px solid #f5a623;
+  }
+  .sub-title:first-of-type { margin-top: 0; }
+  .insight {
+    background: #fff8e6; border: 1px solid #ffe4b5; border-radius: 8px;
+    padding: 14px; margin-top: 14px; font-size: 13px; color: #5d4200; line-height: 1.9;
+  }
+  .insight strong { color: #b8860b; }
+  .trend-section { background: #f0fff4; border-radius: 8px; padding: 16px; }
+  .trend-section .section-header { border-bottom-color: #b7eb8f; }
+  .trend-item {
+    display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e8f5e9;
+  }
+  .trend-item:last-child { border-bottom: none; }
+  .trend-num {
+    width: 22px; height: 22px; border-radius: 50%; background: #52c41a; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+  }
+  .trend-item h4 { font-size: 14px; font-weight: 600; color: #135200; margin-bottom: 2px; }
+  .trend-item p { font-size: 13px; color: #389e0d; line-height: 1.8; }
+  .footer {
+    text-align: center; padding: 24px 16px; font-size: 12px;
+    color: #b2b2b2; border-top: 1px solid #f0f0f0;
+  }
+  .footer .brand { color: #999; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wx-article">
+  <div class="cover">
+    <img src="cover.jpg" alt="AI Daily Briefing">
+    <div class="cover-overlay">
+      <div class="cover-tag">DAILY AI BRIEFING</div>
+      <h1>2026-07-22</h1>
+      <div class="date">AI每日资讯简报 · 星期三</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="summary">
+      <strong>今日看点：</strong>WAIC 2026闭幕达成203.6亿意向采购国产AI从秀肌肉到签单子、国产算力全面进入超节点竞争时代华为昇腾950真机亮相、阿里Qwen3.8-Max预览版2.4万亿参数开源、面壁智能发布首个具身智能成果MiniCPM-Robot、车企扎堆自研智驾芯片比亚迪蔚来理想吉利悉数入局、特斯拉德国工厂扩产年产能提至37.5万辆。
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🔥</span><h2>AI 行业热点</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">头条</span>WAIC 2026闭幕：203.6亿意向采购，国产AI从"秀肌肉"到"签单子"</h3>
+        <div class="meta">新华社 / 头条新闻 · 7月20日</div>
+        <div class="desc">2026世界人工智能大会在上海收官，大会期间达成意向采购金额约203.6亿元。本届大会主线清晰——不再卷模型参数，改拼真实落地，具身智能、企业级智能体、国产算力芯片三大方向成为焦点，标志中国AI商业化进入"签单交付"新阶段。</div>
+      </div>
+      <div class="news">
+        <h3>国产算力全面进入超节点竞争时代，华为昇腾950超节点真机亮相</h3>
+        <div class="meta">科技实话 / 头条新闻 · 7月20日</div>
+        <div class="desc">WAIC 2026闭幕日释放最明确信号：国产算力头部厂商集体放弃单芯片跑分比拼，全面转向超节点整机系统竞争。华为昇腾950超节点实现1024卡统一调度，壁仞科技推出光互连千卡超节点，中科曙光"曙光8000登峰"十万卡AI超集群已满载商用，日均处理作业突破15万个。</div>
+      </div>
+      <div class="news">
+        <h3>Ollama完成8800万美元融资，服务890万开发者加速开放模型生态</h3>
+        <div class="meta">Hacker News / 36氪 · 7月21日</div>
+        <div class="desc">本地大模型运行平台Ollama宣布完成8800万美元融资，由Benchmark、Theory Ventures和8VC等领投。该平台已服务890万开发者，被广泛用于本地部署开源大模型，本轮融资将加速开放模型生态发展与工具链完善。</div>
+      </div>
+      <div class="news">
+        <h3>Hugging Face遭自主AI智能体入侵，用AI工具完成数小时取证分析</h3>
+        <div class="meta">The Decoder / 机器之心 · 7月21日</div>
+        <div class="desc">Hugging Face披露其部分生产基础设施遭一个自主AI智能体系统入侵，攻击者通过恶意数据集利用数据处理管道中的代码执行漏洞，窃取内部数据集和多项服务凭证。Hugging Face随后使用AI工具完成数小时取证分析进行反击，AI安全攻防进入新维度。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🧠</span><h2>大模型与技术</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">首发</span>阿里Qwen3.8-Max预览版开源2.4万亿参数，号称"只输Fable 5"</h3>
+        <div class="meta">头条新闻 / 新浪科技 · 7月19日</div>
+        <div class="desc">Kimi K3以2.8T参数把Claude Fable 5拉下代码榜首仅三天后，阿里直接将2.4T参数的Qwen3.8-Max预览版丢到公开平台，并预告很快开源全部权重。国产旗舰大模型在WAIC期间密集爆发，2.5T-3T参数MiniMax新模型也即将开源，开源权重模型正逼近闭源前沿。</div>
+      </div>
+      <div class="news">
+        <h3>面壁智能发布首个具身智能成果MiniCPM-Robot，1.5B VLA模型驱动机器人</h3>
+        <div class="meta">面壁智能 / 机器之心 · 7月21日</div>
+        <div class="desc">面壁智能联合OpenBMB发布并开源MiniCPM-Robot系列，包括通用VLA模型MiniCPM-RobotManip（1.5B参数）与移动跟踪模型。用15亿参数小模型驱动机器人"大脑"，替代云端大模型实现本地快速低延迟推理，降低具身智能落地成本。</div>
+      </div>
+      <div class="news">
+        <h3>NVIDIA开源Cosmos 3 Edge：4B参数世界模型，面向机器人与边缘AI</h3>
+        <div class="meta">Hugging Face / 量子位 · 7月21日</div>
+        <div class="desc">NVIDIA在Hugging Face上开源Cosmos 3 Edge，一个40亿参数的世界模型，旨在帮助机器人和视觉AI智能体在边缘设备上实现实时推理与动作生成，无需依赖云端即可完成环境理解与决策，加速具身智能边缘部署。</div>
+      </div>
+      <div class="news">
+        <h3>通义实验室发布Qwen-Audio-3.0-TTS实时语音合成模型</h3>
+        <div class="meta">通义实验室 / InfoQ · 7月21日</div>
+        <div class="desc">通义实验室发布Qwen-Audio-3.0-TTS，含Flash（首包延迟约300ms）和Plus两个版本。Plus版本在多语言自然度评测中表现优异，支持多情感多语言实时语音合成，进一步降低语音AI应用开发门槛。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">🚀</span><h2>产品与应用</h2></div>
+      <div class="news">
+        <h3><span class="tag-hot">重磅</span>AI智能体手机元年：荣耀Robot Phone、阶跃STEPX Neo、豆包手机三足鼎立</h3>
+        <div class="meta">智东西 / 中国经营报 · 7月17日</div>
+        <div class="desc">WAIC 2026上AI智能体手机成为最热赛道。荣耀Robot Phone全渠道开启预约，搭载四自由度云台系统；阶跃STEPX Neo入选"镇馆之宝"，搭载自研Step AOS智能体操作系统；二代豆包手机NaviX Ultra在中兴展台展出，意图模型2.0支持多任务同时提报。三家共识：从系统层级重构以智能体为中心的操作系统。</div>
+      </div>
+      <div class="news">
+        <h3>Grok for Excel发布：在Excel中用自然语言提问、写公式和运行场景</h3>
+        <div class="meta">xAI / 36氪 · 7月21日</div>
+        <div class="desc">xAI将Grok引入Microsoft Excel，推出免费Microsoft 365加载项。用户可在工作表中用自然语言提问、根据描述编写公式或运行场景分析，进一步推动AI在办公场景的深度嵌入。</div>
+      </div>
+      <div class="news">
+        <h3>Cursor测试AI智能体集群：规划者+执行者分工，4小时通过80% SQL测试</h3>
+        <div class="meta">Cursor Blog / 机器之心 · 7月21日</div>
+        <div class="desc">Cursor测试新型AI智能体集群，将任务分解为规划者（使用最强模型）和执行者（使用快速廉价模型）。使用Grok 4.5时，新集群在4小时内通过80% SQL测试，验证多智能体分工协作在编程任务中的经济性与效率优势。</div>
+      </div>
+      <div class="news">
+        <h3>《第九区》导演发布首部完全AI生成短片《Nightborne》</h3>
+        <div class="meta">The Decoder / 量子位 · 7月21日</div>
+        <div class="desc">导演Neill Blomkamp发布13分钟科幻恐怖短片《Nightborne》，完全使用Seedance 2.0视频生成模型通过文本提示逐帧创作，采用纪录片风格，标志AI视频生成从实验走向专业级影视创作。</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header"><span class="icon">📰</span><h2>国内动态</h2></div>
+      <div class="news">
+        <h3>工信部：中国四足机器人销量占全球近70%，人形机器人整机超400款</h3>
+        <div class="meta">工信部 / 新华社 · 7月20日</div>
+        <div class="desc">工信部在WAIC 2026期间发布数据，我国研发的四足机器人占全球销量份额接近70%，人形机器人整机产品达400余款、超全球半数。机器人进入"真干活"元年，但场景演示同质化严重，散热和续航仍是产业难题。</div>
+      </div>
+      <div class="news">
+        <h3>QuestMobile半年报：豆包居2026上半年AI应用榜首，前10名格局稳定</h3>
+        <div class="meta">QuestMobile / 今日头条 · 7月14日</div>
+        <div class="desc">QuestMobile发布《2026年上半年AI应用市场发展洞察报告》，截至5月国内AI应用在多终端渗透率出现明显分化。豆包位居C端AI应用流量榜首，前10名格局趋于稳定，消费级AI应用进入存量竞争阶段。</div>
+      </div>
+      <div class="news">
+        <h3>腾讯混元3大模型正式版发布，元宝接入免费Agent功能</h3>
+        <div class="meta">搜狐 / 36氪 · 7月6日</div>
+        <div class="desc">腾讯正式发布基座模型混元Hy3（混元3）正式版，同步在元宝App接入免费Agent功能。国产大模型厂商在WAIC前后密集发布旗舰产品，从模型能力竞争延伸到智能体生态与C端应用入口之争。</div>
+      </div>
+    </div>
+    <div class="auto-section">
+      <div class="section-header"><span class="icon">🚗</span><h2>汽车研发信息化专题</h2></div>
+      <div class="sub-title">智驾芯片与方案</div>
+      <div class="news">
+        <h3><span class="tag-hot">重点</span>车企扎堆自研智驾芯片：比亚迪璇玑A3量产，蔚来神玑参展，理想马赫M100亮相</h3>
+        <div class="meta">证券时报 / 深圳商报 · 7月10日</div>
+        <div class="desc">比亚迪、蔚来、理想、吉利等头部车企正扎堆全栈自研智驾芯片。比亚迪发布中国首款4nm制程智驾芯片"璇玑A3"并已开启规模化量产；蔚来自研5nm智驾芯片神玑NX9031已交付超25万颗，子公司神玑技术在WAIC首次独立参展；理想5月亮相5nm车规级马赫M100芯片。自研芯片以4nm、5nm主流工艺为主，标志行业竞争迈入算力自主可控新阶段。</div>
+      </div>
+      <div class="news">
+        <h3>华为引望重申L3不可跳过，乾崑智驾ADS 5采用AI智能体架构</h3>
+        <div class="meta">头条新闻 / 盖世汽车 · 7月20日</div>
+        <div class="desc">华为高级副总裁、引望CEO靳玉志再次公开表态，L3是通往高阶自动驾驶绕不开的必经阶段，不存在跨越式发展。引望将推送乾崑智驾ADS 5，采用WEWA 2.0架构进化为面向自动驾驶的AI智能体，2026年研发投入预计达180亿元，算力投入3年增长21倍。</div>
+      </div>
+      <div class="news">
+        <h3>华为ADS 5.0稳居智驾T0天花板，小鹏XNGP 4.0与理想AD Max位列T1</h3>
+        <div class="meta">新浪汽车 / 盖世汽车 · 7月10日</div>
+        <div class="desc">2026年新能源车智驾梯队已明确：华为ADS 5.0稳居T0天花板，小鹏XNGP 4.0、理想AD Max位列T1第一梯队，特斯拉FSD、蔚来Pilot处于T2。城市通勤选华为，性价比选小鹏，家用选理想成为市场共识。</div>
+      </div>
+      <div class="sub-title">PLM / BOM / MES 制造信息化</div>
+      <div class="news">
+        <h3>全链路数字化落地：PLM-MES-PLC多系统对接成2026制造信息化核心痛点</h3>
+        <div class="meta">工控网 / 今日头条 · 7月18日</div>
+        <div class="desc">行业分析指出，当前汽车制造数字化最大瓶颈在于PLM研发工艺无法同步到生产端、MES工单无法下发至设备、PLC底层数据无法回传统计，导致数字化沦为表面形式。核心问题不在设备老旧而在上位机开发对多系统协议对接能力不足，全链路数据贯通成为2026年制造信息化攻坚方向。</div>
+      </div>
+      <div class="news">
+        <h3>软件定义汽车（SDV）倒逼制造柔性化，碳中和目标催生绿色制造新范式</h3>
+        <div class="meta">原创力文档 / 行业研报 · 7月18日</div>
+        <div class="desc">2026汽车智能制造数字化转型路径研究报告指出，软件定义汽车对制造柔性化提出更高要求，同时碳中和目标催生绿色制造新范式。数字化转型顶层架构需从设计端PLM到制造端MES再到供应链SRM实现全链路数据贯通，BOM一体化平台成为研发、工艺、制造协同的核心枢纽。</div>
+      </div>
+      <div class="sub-title">市场与车企动态</div>
+      <div class="news">
+        <h3>特斯拉德国工厂扩产：周产能提至7500辆，年产能约37.5万辆</h3>
+        <div class="meta">头条新闻 / 盖世汽车 · 7月20日</div>
+        <div class="desc">特斯拉正式确认德国格伦海德工厂扩产，计划将周产能提至7500辆，年产能约37.5万辆，同步扩大电池生产、新增3500个岗位。与此同时大众宣布裁员10万，欧洲新能源汽车市场格局加速重塑，特斯拉扩产与大众收缩形成鲜明对比。</div>
+      </div>
+      <div class="news">
+        <h3>比亚迪半年销量79.52万辆断层领先，零跑称智驾芯片"已过剩"</h3>
+        <div class="meta">中汽数研 / 证券时报 · 7月13日</div>
+        <div class="desc">中汽数研发布2026上半年汽车品牌销量排行榜，比亚迪以79.52万辆半年累计销量断层领先，远超大众、丰田。与此同时，零跑汽车创始人朱江明发出预警称"当下AI智能驾驶的芯片过剩"，市面上已有十余种选择，年总需求量不过一两千万颗，与比亚迪蔚来等扎堆造芯形成鲜明对比。</div>
+      </div>
+      <div class="news">
+        <h3>比亚迪7月第二周新能源订单领跑，特斯拉订单被反超</h3>
+        <div class="meta">头条新闻 / 汽车行业媒体 · 7月20日</div>
+        <div class="desc">2026年7月第二周新能源订单数据显示，比亚迪与零跑领跑订单榜，特斯拉订单被反超。市场格局变化速度超预期，国产新能源品牌在智驾、价格、产品力多维度持续发力，倒逼特斯拉在中国市场调整策略。</div>
+      </div>
+      <div class="insight">
+        <strong>📌 研发信息化洞察</strong><br>
+        本周汽车研发信息化呈现三大主线：一是智驾芯片自研从"单点突破"走向"全栈体系化竞争"，比亚迪4nm璇玑A3已规模化量产、蔚来5nm神玑NX9031交付超25万颗并首次独立参展WAIC、理想马赫M100亮相，但零跑创始人直言"芯片过剩"——头部车企以自研芯片夺回成本控制权与供应链主导权，而零跑选择"不跟风"走差异化路线，行业分化加剧；二是制造信息化进入"全链路数据贯通"深水区，PLM-MES-PLC多系统对接不畅成为最大瓶颈，软件定义汽车倒逼制造端柔性化升级，BOM一体化平台从研发工具升级为跨部门协同核心枢纽；三是全球市场格局加速重塑，特斯拉德国扩产年产能37.5万辆与大众裁员10万形成冰火两重天，比亚迪79.52万辆半年销量断层领先，中国车企正以"自研芯片+自研操作系统+制造全链路数字化"三位一体能力构建全球竞争壁垒。
+      </div>
+    </div>
+    <div class="trend-section">
+      <div class="section-header"><span class="icon">📊</span><h2>趋势短评</h2></div>
+      <div class="trend-item">
+        <div class="trend-num">1</div>
+        <div>
+          <h4>AI从"秀肌肉"到"签单子"：商业化落地成核心标尺</h4>
+          <p>WAIC 2026以203.6亿意向采购收官，大会主线从模型参数竞争转向真实落地交付，具身智能、企业级智能体、国产算力三大方向成为验证AI商业化成色的试金石。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">2</div>
+        <div>
+          <h4>开源模型密集爆发：国产旗舰集体逼近闭源前沿</h4>
+          <p>Kimi K3、Qwen3.8-Max、DeepSeek V4在WAIC前后密集发布，2.4T-2.8T参数开源模型接连问世，开源权重模型已多次达到闭源前沿水平，中国AI开源力量正改写全球竞争格局。</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">3</div>
+        <div>
+          <h4>智造数字化深水区：全链路贯通与芯片自主可控并行</h4>
+          <p>车企自研智驾芯片进入4nm/5nm量产阶段，同时PLM-MES-PLC多系统数据贯通成为制造信息化核心攻坚方向，"芯片自主+数据贯通"双轮驱动汽车研发数字化转型进入新阶段。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand">2026-07-22｜AI每日资讯简报</div>
+    <div>信息来源：36氪、机器之心、量子位、InfoQ、新华社、证券时报、盖世汽车、新浪科技等 ｜ 仅供内部参考</div>
+  </div>
+</div>
+</body>
+</html>
